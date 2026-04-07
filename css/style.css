@@ -147,32 +147,13 @@ body {
 /* Hero Section Styling */
 .hero-section {
     min-height: calc(100vh - 96px); /* Accounting for navbar height */
-    background: radial-gradient(circle at center, var(--tertiary-black) 0%, var(--primary-black) 70%);
+    background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(0, 0, 0, 0.95)), url('../images/hero_bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     position: relative;
     overflow: hidden;
-}
-
-/* Subtle background accent */
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: -20%;
-    left: -10%;
-    width: 50%;
-    height: 50%;
-    background: radial-gradient(circle, rgba(255, 102, 0, 0.1) 0%, transparent 70%);
-    z-index: 0;
-}
-
-.hero-section::after {
-    content: '';
-    position: absolute;
-    bottom: -20%;
-    right: -10%;
-    width: 50%;
-    height: 50%;
-    background: radial-gradient(circle, rgba(255, 102, 0, 0.1) 0%, transparent 70%);
-    z-index: 0;
 }
 
 .hero-content {
@@ -225,6 +206,61 @@ body {
     background-color: rgba(255, 255, 255, 0.05);
     border-color: var(--text-white);
     color: var(--text-white);
+}
+
+/* Video Play Logo Button */
+.video-play-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--primary-orange);
+    color: var(--primary-black);
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.4), 0 0 0 5px rgba(255, 102, 0, 0.1);
+    position: relative;
+    cursor: pointer;
+}
+
+.video-play-btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--primary-orange);
+    opacity: 0.3;
+    z-index: -1;
+    animation: pulsePlayBtn 2s infinite;
+}
+
+.video-play-btn:hover {
+    background-color: var(--secondary-orange);
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 102, 0, 0.6), 0 0 0 8px rgba(255, 102, 0, 0.2);
+    color: var(--primary-black);
+}
+
+.video-play-btn i {
+    margin-left: 5px; /* Slight offset to visually center the play triangle */
+}
+
+@keyframes pulsePlayBtn {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.6);
+        opacity: 0;
+    }
 }
 
 /* Animations */

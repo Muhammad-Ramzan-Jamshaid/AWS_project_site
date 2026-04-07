@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="AWS Project - A stunning black and orange themed web application.">
     <title>AWS Project Site</title>
-    
+
     <!-- Google Fonts for Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    
+
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <!-- Navbar -->
@@ -29,15 +31,17 @@
             <a class="navbar-brand logo-text" href="#">
                 <i class="bi bi-cloud-lightning-fill text-orange me-2"></i><span class="text-white">AWS</span>
             </a>
-            
+
             <!-- Mobile Toggle -->
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
+
             <!-- Navbar Links & Socials -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                
+
                 <!-- Centered Links -->
                 <ul class="navbar-nav mx-auto text-center">
                     <li class="nav-item">
@@ -50,10 +54,16 @@
                         <a class="nav-link" href="#events">Events</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#teams">Teams</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
-                
+
                 <!-- Right Aligned Social Icons -->
                 <div class="d-flex justify-content-center justify-content-lg-end social-icons mt-3 mt-lg-0">
                     <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
@@ -67,16 +77,16 @@
 
     <!-- Main Content Area -->
     <main id="home" class="hero-section text-center d-flex align-items-center justify-content-center">
-        <div class="container">
-            <div class="hero-content">
-                <span class="badge bg-dark-orange mb-3 px-3 py-2 text-uppercase tracking-wider">Welcome</span>
-                <h1 class="display-3 fw-bold mb-4">Discover <span class="text-orange highlight-text">AWS</span> Excellence</h1>
-                <p class="lead text-gray mb-5 mx-auto" style="max-width: 600px;">Experience a seamlessly crafted website layout built with modern web technologies. Dynamic, responsive, and stunning.</p>
-                
-                <div class="d-flex justify-content-center gap-3">
-                    <button class="btn btn-primary-custom px-4 py-3 fw-semibold">Get Started <i class="bi bi-arrow-right ms-2"></i></button>
-                    <button class="btn btn-outline-custom px-4 py-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#videoModal">
-                        <i class="bi bi-play-circle-fill me-2"></i>Play Video
+        <div class="container text-center">
+            <div class="hero-content mx-auto d-flex flex-column align-items-center">
+                <h1 class="display-3 fw-bold mb-4">Learn. Build. And Lead with <span class="fw-bolder text-orange highlight-text">excellence</span></h1>
+                <p class="lead text-light mb-5 mx-auto" style="max-width: 800px; font-weight: 500;">AWS Club brings together cloud enthusiasts to learn, build, and innovate using Amazon Web Services. Together, we turn ideas into impact.</p>
+
+                <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+                    <button class="btn btn-primary-custom px-4 py-3 fw-semibold">Join the Club <i class="bi bi-arrow-right ms-2"></i></button>
+                    <button class="btn btn-outline-custom px-4 py-3 fw-semibold">Explore Events</button>
+                    <button class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" aria-label="Play Video" title="Play Video">
+                        <i class="bi bi-play-fill"></i>
                     </button>
                 </div>
             </div>
@@ -88,10 +98,12 @@
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content bg-transparent border-0">
                 <div class="modal-header border-0 pb-0 justify-content-end p-2">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
                 </div>
                 <div class="modal-body p-0">
-                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg border border-warning border-opacity-25" style="background: #000;">
+                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg border border-warning border-opacity-25"
+                        style="background: #000;">
                         <video id="projectVideo" controls autoplay>
                             <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                             Your browser does not support the video tag.
@@ -107,4 +119,5 @@
     <!-- Custom JS -->
     <script src="js/script.js"></script>
 </body>
+
 </html>
