@@ -1,0 +1,263 @@
+/* Color Variables */
+:root {
+    --primary-black: #0f0f0f;
+    --secondary-black: #1a1a1a;
+    --tertiary-black: #262626;
+    
+    --primary-orange: #ff6600;
+    --secondary-orange: #ff8533;
+    --dark-orange: #cc5200;
+    
+    --text-white: #ffffff;
+    --text-light: #f4f4f4;
+    --text-gray: #a0a0a0;
+}
+
+body {
+    background-color: var(--primary-black);
+    color: var(--text-light);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Typography Utilities */
+.text-orange {
+    color: var(--primary-orange) !important;
+}
+
+.text-gray {
+    color: var(--text-gray) !important;
+}
+
+.bg-dark-orange {
+    background-color: rgba(255, 102, 0, 0.1) !important;
+    color: var(--primary-orange) !important;
+    border: 1px solid rgba(255, 102, 0, 0.2);
+}
+
+.tracking-wider {
+    letter-spacing: 0.1em;
+}
+
+/* Custom Navbar */
+.custom-navbar {
+    background: rgba(15, 15, 15, 0.85); /* Glassmorphism background */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: 1.2rem 0;
+    border-bottom: 2px solid var(--primary-orange);
+    box-shadow: 0 4px 30px rgba(255, 102, 0, 0.08); /* Subtle orange glow */
+    transition: all 0.3s ease;
+}
+
+/* Logo */
+.logo-text {
+    font-size: 2.2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+
+/* Navigation Links */
+.navbar-nav {
+    gap: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: var(--text-gray) !important;
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 0 10px;
+    padding: 8px 0 !important;
+    position: relative;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: var(--text-white) !important;
+}
+
+/* Active & Hover Underline Animation */
+.navbar-nav .nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 50%;
+    background-color: var(--primary-orange);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.navbar-nav .nav-link:hover::after,
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Social Icons Area */
+.social-icons {
+    gap: 15px;
+}
+
+.social-link {
+    color: var(--text-gray);
+    font-size: 1.2rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.social-link:hover {
+    color: var(--primary-black);
+    background-color: var(--primary-orange);
+    border-color: var(--primary-orange);
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 102, 0, 0.4);
+}
+
+/* Mobile Toggle Customization */
+.custom-toggler {
+    border-color: rgba(255, 102, 0, 0.5) !important;
+    padding: 0.4rem 0.6rem;
+}
+
+.custom-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 102, 0, 0.25) !important;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 102, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    min-height: calc(100vh - 96px); /* Accounting for navbar height */
+    background: radial-gradient(circle at center, var(--tertiary-black) 0%, var(--primary-black) 70%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Subtle background accent */
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(255, 102, 0, 0.1) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.hero-section::after {
+    content: '';
+    position: absolute;
+    bottom: -20%;
+    right: -10%;
+    width: 50%;
+    height: 50%;
+    background: radial-gradient(circle, rgba(255, 102, 0, 0.1) 0%, transparent 70%);
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    animation: fadeIn 1s ease-out;
+}
+
+.highlight-text {
+    position: relative;
+    display: inline-block;
+}
+
+.highlight-text::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: rgba(255, 102, 0, 0.2);
+    z-index: -1;
+    transform: skewX(-15deg);
+}
+
+/* Custom Buttons */
+.btn-primary-custom {
+    background-color: var(--primary-orange);
+    color: var(--primary-black);
+    border: 2px solid var(--primary-orange);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+    background-color: transparent;
+    color: var(--primary-orange);
+    box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-outline-custom {
+    background-color: transparent;
+    color: var(--text-white);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-white);
+    color: var(--text-white);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .navbar-nav {
+        margin-top: 1.5rem;
+        padding-bottom: 1rem;
+        gap: 15px;
+    }
+    
+    .navbar-collapse {
+        background-color: var(--secondary-black);
+        border-radius: 10px;
+        padding: 1rem;
+        margin-top: 1rem;
+        border: 1px solid rgba(255, 102, 0, 0.1);
+    }
+    
+    .social-icons {
+        margin-top: 1rem !important;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+        padding-top: 1.5rem;
+    }
+}
