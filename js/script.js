@@ -73,6 +73,27 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Team Slider Navigation Logic
+    const teamSlider = document.getElementById('teamSlider');
+    const btnPrev = document.querySelector('.btn-prev');
+    const btnNext = document.querySelector('.btn-next');
+
+    if (teamSlider && btnPrev && btnNext) {
+        // Calculate the scroll amount dynamically based on card size
+        const getScrollAmount = () => {
+            const firstItem = teamSlider.querySelector('.team-slider-item');
+            return firstItem ? firstItem.offsetWidth + 24 : 344; // 24px is the flex gap
+        };
+
+        btnNext.addEventListener('click', () => {
+            teamSlider.scrollBy({ left: getScrollAmount(), behavior: 'smooth' });
+        });
+
+        btnPrev.addEventListener('click', () => {
+            teamSlider.scrollBy({ left: -getScrollAmount(), behavior: 'smooth' });
+        });
+    }
+
     // Console greeting
     console.log("%cAWS Project loaded successfully!", "color: #ff6600; font-size: 16px; font-weight: bold;");
 });

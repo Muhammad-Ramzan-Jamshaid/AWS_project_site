@@ -3,11 +3,11 @@
     --primary-black: #0f0f0f;
     --secondary-black: #1a1a1a;
     --tertiary-black: #262626;
-    
+
     --primary-orange: #ff6600;
     --secondary-orange: #ff8533;
     --dark-orange: #cc5200;
-    
+
     --text-white: #ffffff;
     --text-light: #f4f4f4;
     --text-gray: #a0a0a0;
@@ -43,12 +43,14 @@ body {
 
 /* Custom Navbar */
 .custom-navbar {
-    background: rgba(15, 15, 15, 0.85); /* Glassmorphism background */
+    background: rgba(15, 15, 15, 0.85);
+    /* Glassmorphism background */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     padding: 1.2rem 0;
     border-bottom: 2px solid var(--primary-orange);
-    box-shadow: 0 4px 30px rgba(255, 102, 0, 0.08); /* Subtle orange glow */
+    box-shadow: 0 4px 30px rgba(255, 102, 0, 0.08);
+    /* Subtle orange glow */
     transition: all 0.3s ease;
 }
 
@@ -146,7 +148,8 @@ body {
 
 /* Hero Section Styling */
 .hero-section {
-    min-height: calc(100vh - 96px); /* Accounting for navbar height */
+    min-height: calc(100vh - 96px);
+    /* Accounting for navbar height */
     background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(0, 0, 0, 0.95)), url('../images/hero_bg.png');
     background-size: cover;
     background-position: center;
@@ -249,7 +252,8 @@ body {
 }
 
 .video-play-btn i {
-    margin-left: 5px; /* Slight offset to visually center the play triangle */
+    margin-left: 5px;
+    /* Slight offset to visually center the play triangle */
 }
 
 @keyframes pulsePlayBtn {
@@ -257,6 +261,7 @@ body {
         transform: translate(-50%, -50%) scale(1);
         opacity: 0.8;
     }
+
     100% {
         transform: translate(-50%, -50%) scale(1.6);
         opacity: 0;
@@ -269,6 +274,7 @@ body {
         opacity: 0;
         transform: translateY(20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -282,7 +288,7 @@ body {
         padding-bottom: 1rem;
         gap: 15px;
     }
-    
+
     .navbar-collapse {
         background-color: var(--secondary-black);
         border-radius: 10px;
@@ -290,7 +296,7 @@ body {
         margin-top: 1rem;
         border: 1px solid rgba(255, 102, 0, 0.1);
     }
-    
+
     .social-icons {
         margin-top: 1rem !important;
         border-top: 1px solid rgba(255, 255, 255, 0.05);
@@ -300,7 +306,7 @@ body {
 
 /* About Section */
 .about-section {
-    background-color: var(--secondary-black);
+    background-color: var(--primary-black);
     position: relative;
     border-top: 1px solid rgba(255, 102, 0, 0.1);
 }
@@ -366,18 +372,201 @@ body {
 }
 
 /* Service Card Color Variations */
-.card-orange { border-bottom: 3px solid #ff9800; }
-.card-orange:hover { background-color: rgba(255, 152, 0, 0.05); border-color: rgba(255, 152, 0, 0.3); box-shadow: 0 10px 30px rgba(255, 152, 0, 0.1); }
-.icon-orange { background-color: rgba(255, 152, 0, 0.2); color: #ff9800; }
+.card-orange {
+    border-bottom: 3px solid #ff9800;
+}
 
-.card-blue { border-bottom: 3px solid #4facfe; }
-.card-blue:hover { background-color: rgba(79, 172, 254, 0.05); border-color: rgba(79, 172, 254, 0.3); box-shadow: 0 10px 30px rgba(79, 172, 254, 0.1); }
-.icon-blue { background-color: rgba(79, 172, 254, 0.2); color: #4facfe; }
+.card-orange:hover {
+    background-color: rgba(255, 152, 0, 0.05);
+    border-color: rgba(255, 152, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 152, 0, 0.1);
+}
 
-.card-green { border-bottom: 3px solid #4caf50; }
-.card-green:hover { background-color: rgba(76, 175, 80, 0.05); border-color: rgba(76, 175, 80, 0.3); box-shadow: 0 10px 30px rgba(76, 175, 80, 0.1); }
-.icon-green { background-color: rgba(76, 175, 80, 0.2); color: #4caf50; }
+.icon-orange {
+    background-color: rgba(255, 152, 0, 0.2);
+    color: #ff9800;
+}
 
-.card-purple { border-bottom: 3px solid #a855f7; }
-.card-purple:hover { background-color: rgba(168, 85, 247, 0.05); border-color: rgba(168, 85, 247, 0.3); box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1); }
-.icon-purple { background-color: rgba(168, 85, 247, 0.2); color: #a855f7; }
+.card-blue {
+    border-bottom: 3px solid #4facfe;
+}
+
+.card-blue:hover {
+    background-color: rgba(79, 172, 254, 0.05);
+    border-color: rgba(79, 172, 254, 0.3);
+    box-shadow: 0 10px 30px rgba(79, 172, 254, 0.1);
+}
+
+.icon-blue {
+    background-color: rgba(79, 172, 254, 0.2);
+    color: #4facfe;
+}
+
+.card-green {
+    border-bottom: 3px solid #4caf50;
+}
+
+.card-green:hover {
+    background-color: rgba(76, 175, 80, 0.05);
+    border-color: rgba(76, 175, 80, 0.3);
+    box-shadow: 0 10px 30px rgba(76, 175, 80, 0.1);
+}
+
+.icon-green {
+    background-color: rgba(76, 175, 80, 0.2);
+    color: #4caf50;
+}
+
+.card-purple {
+    border-bottom: 3px solid #a855f7;
+}
+
+.card-purple:hover {
+    background-color: rgba(168, 85, 247, 0.05);
+    border-color: rgba(168, 85, 247, 0.3);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);
+}
+
+.icon-purple {
+    background-color: rgba(168, 85, 247, 0.2);
+    color: #a855f7;
+}
+
+/* Team Section */
+.team-section {
+    background-color: var(--secondary-black);
+    position: relative;
+    border-top: 1px solid rgba(255, 102, 0, 0.1);
+}
+
+.team-slider-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+    padding-bottom: 2rem;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* Hide scrollbar since we are using buttons */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+/* Chrome, Safari, Edge scrollbar hide */
+.team-slider-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* Slider Navigation Buttons */
+.btn-slider-nav {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--secondary-black);
+    color: var(--primary-orange);
+    border: 1px solid rgba(255, 102, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.btn-slider-nav:hover {
+    background-color: var(--primary-orange);
+    color: var(--primary-black);
+    border-color: var(--primary-orange);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.btn-prev {
+    left: -20px;
+}
+
+.btn-next {
+    right: -20px;
+}
+
+.team-slider-item {
+    flex: 0 0 calc(33.333% - 1rem);
+    scroll-snap-align: start;
+    min-width: 320px;
+}
+
+@media (max-width: 991px) {
+    .team-slider-item {
+        flex: 0 0 calc(50% - 1rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .team-slider-item {
+        flex: 0 0 85%;
+    }
+}
+
+.team-card {
+    background-color: var(--primary-black);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.team-card:hover {
+    transform: translateY(-15px);
+    border-color: rgba(255, 102, 0, 0.3);
+    box-shadow: 0 15px 35px rgba(255, 102, 0, 0.15);
+}
+
+.team-img-wrapper {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding: 5px;
+    background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+    transition: all 0.4s ease;
+}
+
+.team-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 4px solid var(--primary-black);
+}
+
+.team-card:hover .team-img-wrapper {
+    transform: scale(1.08); /* slight scale to pop out */
+}
+
+.social-overlay {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    background: rgba(255, 102, 0, 0.85);
+    opacity: 0;
+    transition: all 0.3s ease;
+    transform: scale(0.8);
+}
+
+.team-img-wrapper:hover .social-overlay {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.social-overlay a {
+    font-size: 1.5rem;
+    transition: all 0.2s ease;
+}
+
+.social-overlay a:hover {
+    color: var(--primary-black) !important;
+    transform: translateY(-3px);
+}
