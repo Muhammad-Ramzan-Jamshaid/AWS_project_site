@@ -2,763 +2,1372 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AWS Project - A stunning black and orange themed web application.">
-    <title>AWS Project Site</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Index - Clarity Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
-    <!-- Google Fonts for Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <meta name="robots" content="noindex, nofollow">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Favicons -->
+  <link href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/favicon.png" rel="icon">
+  <link href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+  <!-- Vendor CSS Files -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Clarity
+  * Template URL: https://bootstrapmade.com/clarity-bootstrap-agency-template/
+  * Updated: Sep 13 2025 with Bootstrap v5.3.8
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+<style>
+:root, [data-bs-theme=light] {
+  --accent-color: #ff6600 !important;
+  --heading-color: #ffffff !important;
+  --default-color: #d1d1d1 !important;
+  --background-color: #0b0b0b !important;
+  --surface-color: #151515 !important;
+  --nav-color: #ffffff !important;
+  --nav-hover-color: #ff6600 !important;
+}
+body { background-color: #0b0b0b !important; color: #d1d1d1 !important; }
+h1, h2, h3, h4, h5, h6 { color: #ffffff !important; }
+.card, .services .service-item, .features .feature-item { background-color: #1a1a1a !important; border-color: #333 !important; }
+.header { background-color: #0b0b0b !important; }
+.footer { background-color: #151515 !important; }
+</style>
 </head>
 
-<body>
+<body class="index-page">
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg custom-navbar sticky-top">
-        <div class="container-fluid px-4 px-lg-5">
-            <!-- Logo -->
-            <a class="navbar-brand logo-text" href="#">
-                <i class="bi bi-cloud-lightning-fill text-orange me-2"></i><span class="text-white">AWS</span>
-            </a>
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/logo.webp" alt=""> -->
+        <h1 class="sitename">Clarity</h1>
+      </a>
 
-            <!-- Navbar Links & Socials -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-
-                <!-- Centered Links -->
-                <ul class="navbar-nav mx-auto text-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#events">Events</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#resources">Resources</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#teams">Teams</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Dropdown 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Deep Dropdown 1</a></li>
+                  <li><a href="#">Deep Dropdown 2</a></li>
+                  <li><a href="#">Deep Dropdown 3</a></li>
+                  <li><a href="#">Deep Dropdown 4</a></li>
+                  <li><a href="#">Deep Dropdown 5</a></li>
                 </ul>
+              </li>
+              <li><a href="#">Dropdown 2</a></li>
+              <li><a href="#">Dropdown 3</a></li>
+              <li><a href="#">Dropdown 4</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
 
-                <!-- Right Aligned Social Icons -->
-                <div class="d-flex justify-content-center justify-content-lg-end social-icons mt-3 mt-lg-0">
-                    <a href="#" class="social-link" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                    <a href="#" class="social-link" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="social-link" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                    <a href="#" class="social-link" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+      <a class="btn-getstarted" href="#about">Get Started</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
+            <div class="hero-content">
+              <h1>Transform Your Digital Presence</h1>
+              <p>We create innovative digital solutions that drive growth and elevate your brand. From web development to digital marketing, we're your partners in digital transformation.</p>
+              <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">Get Started</a>
+                <a href="#" class="btn btn-outline">Our Work</a>
+              </div>
+              <div class="hero-stats">
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"></span>
+                  <span class="stat-label">Projects Completed</span>
                 </div>
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1"></span>
+                  <span class="stat-label">Client Satisfaction</span>
+                </div>
+                <div class="stat-item">
+                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"></span>
+                  <span class="stat-label">Team Members</span>
+                </div>
+              </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Main Content Area -->
-    <main id="home" class="hero-section d-flex align-items-center">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Hand Text Content -->
-                <div class="col-lg-6 hero-content text-start">
-                    <h1 class="display-3 fw-bold mb-4">Learn. Build. And Lead with <span
-                            class="fw-bolder text-orange highlight-text">excellence</span></h1>
-                    <p class="lead text-light mb-5" style="font-weight: 500;">AWS Club brings
-                        together cloud enthusiasts to learn, build, and innovate using Amazon Web Services. Together, we
-                        turn ideas into impact.</p>
-
-                    <div class="hero-buttons d-flex flex-wrap gap-3 mb-5">
-                        <button class="btn btn-primary-custom px-4 py-3 fw-semibold">Join the Club <i
-                                class="bi bi-arrow-right ms-2"></i></button>
-                        <button class="btn btn-outline-custom px-4 py-3 fw-semibold">Explore Events</button>
-                        <button class="video-play-btn ms-lg-3 mt-3 mt-sm-0" data-bs-toggle="modal"
-                            data-bs-target="#videoModal" aria-label="Play Video" title="Play Video">
-                            <i class="bi bi-play-fill"></i>
-                        </button>
-                    </div>
-
-                    <!-- Clarity-style Stats -->
-                    <div class="hero-stats d-flex flex-wrap gap-4 pt-4 border-top border-secondary border-opacity-25">
-                        <div class="stat-item pe-4 border-end border-secondary border-opacity-25">
-                            <span class="stat-number display-6 fw-bold text-white d-block">150+</span>
-                            <span class="stat-label text-gray small text-uppercase tracking-wider">Members</span>
-                        </div>
-                        <div class="stat-item pe-4 border-end border-secondary border-opacity-25">
-                            <span class="stat-number display-6 fw-bold text-white d-block">24</span>
-                            <span class="stat-label text-gray small text-uppercase tracking-wider">Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number display-6 fw-bold text-white d-block">100%</span>
-                            <span class="stat-label text-gray small text-uppercase tracking-wider">AWS Focus</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Hand Visual Content -->
-                <div class="col-lg-6 mt-5 mt-lg-0">
-                    <div class="hero-visual position-relative text-center text-lg-end">
-                        <div class="hero-image position-relative z-1">
-                            <img src="images/about_image.png" alt="AWS Club Innovation"
-                                class="img-fluid rounded-4 shadow-lg border border-warning border-opacity-25">
-                        </div>
-                        <!-- Decorative background elements similar to Clarity -->
-                        <div class="bg-shape shape-1 position-absolute bg-dark-orange rounded-circle"
-                            style="width: 300px; height: 300px; top: -50px; right: 50px; z-index: 0; filter: blur(50px); opacity: 0.3;">
-                        </div>
-                        <div class="bg-shape shape-2 position-absolute bg-primary rounded-circle"
-                            style="width: 200px; height: 200px; bottom: -20px; left: 20px; z-index: 0; filter: blur(40px); opacity: 0.2;">
-                        </div>
-                    </div>
-                </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-visual">
+              <div class="hero-image">
+                <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/misc/misc-16.webp" alt="Digital Agency Hero" class="img-fluid">
+              </div>
             </div>
+          </div>
         </div>
-    </main>
+      </div>
+
+      <div class="hero-bg-elements">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-particles"></div>
+      </div>
+
+    </section><!-- /Hero Section -->
 
     <!-- About Section -->
-    <section id="about" class="about-section py-5">
-        <div class="container py-5">
-            <div class="row align-items-center">
-                <!-- Left Side: Text and 2x2 Feature Grid -->
-                <div class="col-lg-6 text-start mb-5 mb-lg-0 pe-lg-5">
-                    <h2 class="display-3 fw-bold mb-4">Who <span class="text-orange">We</span> Are</h2>
-                    <p class="lead text-gray mb-5">AWS Club is a student-led community passionate about Amazon Web
-                        Services. We empower learners through workshops, hands-on projects, and real-world challenges.
-                        Our mission is to build a strong cloud community and prepare members for the future of
-                        technology.</p>
+    <section id="about" class="about section">
 
-                    <!-- 2x2 Feature Grid -->
-                    <div class="row g-4">
-                        <!-- Card 1 -->
-                        <div class="col-md-6">
-                            <div class="about-feature-card d-flex align-items-start p-3 rounded h-100">
-                                <div
-                                    class="icon-wrapper d-flex align-items-center justify-content-center rounded flex-shrink-0 me-3">
-                                    <i class="bi bi-people-fill"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-6">Open to All</h5>
-                                    <p class="text-gray mb-0 small">Anyone curious about cloud is welcome.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 2 -->
-                        <div class="col-md-6">
-                            <div class="about-feature-card d-flex align-items-start p-3 rounded h-100">
-                                <div
-                                    class="icon-wrapper d-flex align-items-center justify-content-center rounded flex-shrink-0 me-3">
-                                    <i class="bi bi-mortarboard-fill"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-6">Learn by Doing</h5>
-                                    <p class="text-gray mb-0 small">Hands-on projects and real-world skills.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 3 -->
-                        <div class="col-md-6">
-                            <div class="about-feature-card d-flex align-items-start p-3 rounded h-100">
-                                <div
-                                    class="icon-wrapper d-flex align-items-center justify-content-center rounded flex-shrink-0 me-3">
-                                    <i class="bi bi-lightbulb-fill"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-6">Grow Together</h5>
-                                    <p class="text-gray mb-0 small">Connect, collaborate, and grow with peers.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Card 4 -->
-                        <div class="col-md-6">
-                            <div class="about-feature-card d-flex align-items-start p-3 rounded h-100">
-                                <div
-                                    class="icon-wrapper d-flex align-items-center justify-content-center rounded flex-shrink-0 me-3">
-                                    <i class="bi bi-globe"></i>
-                                </div>
-                                <div>
-                                    <h5 class="fw-bold mb-1 fs-6">Cloud First</h5>
-                                    <p class="text-gray mb-0 small">Focused on AWS, building for the future.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <!-- Right Side: Image Composition (Clarity Style) -->
-                <div class="col-lg-6 mt-5 mt-lg-0 px-lg-4">
-                    <div class="image-composition mx-auto mx-lg-0" style="max-width: 500px;">
-                        <div class="image-main">
-                            <img src="images/about_image.png" alt="AWS Club Innovation"
-                                class="img-fluid rounded-4 shadow-lg border border-warning border-opacity-25"
-                                style="border-width: 2px !important;">
-                        </div>
-                        <div class="image-secondary">
-                            <img src="images/team_1.png" alt="Collaborative discussion"
-                                class="img-fluid bg-secondary-black">
-                        </div>
-                        <div class="stats-card">
-                            <div class="stats-item">
-                                <h3>3+</h3>
-                                <p>Years of Growth</p>
-                            </div>
-                            <div class="stats-item">
-                                <h3>50+</h3>
-                                <p>Events Hosted</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row gy-5 align-items-center">
+
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="content">
+              <h6 class="subtitle">Discover Our Story</h6>
+              <h2>Innovative Solutions for a Digital-First World</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              </p>
+
+              <ul class="features-list">
+                <li><i class="bi bi-check-circle-fill"></i><span>Excepteur sint occaecat cupidatat non proident.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span>Nemo enim ipsam voluptatem quia voluptas sit.</span></li>
+                <li><i class="bi bi-check-circle-fill"></i><span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
+              </ul>
+
+              <a href="#" class="btn btn-primary">Discover More</a>
             </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+            <div class="image-composition">
+              <div class="image-main">
+                <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/about/about-9.webp" alt="Modern office with a team working" class="img-fluid" loading="lazy">
+              </div>
+              <div class="image-secondary">
+                <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/about/about-square-8.webp" alt="Collaborative discussion" class="img-fluid" loading="lazy">
+              </div>
+              <div class="stats-card">
+                <div class="stats-item">
+                  <h3>20+</h3>
+                  <p>Years of Expertise</p>
+                </div>
+                <div class="stats-item">
+                  <h3>500+</h3>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </section>
 
-    <!-- What We Do Section (Clarity Services Style) -->
-    <section id="what-we-do" class="what-we-do-section py-5">
-        <div class="container py-5">
-            <!-- Section Title -->
-            <div class="text-center mb-5 pb-3">
-                <span class="text-orange fw-bold tracking-wider text-uppercase small d-block mb-3">What We Do</span>
-                <h2 class="display-4 fw-bold mb-3">Our <span class="text-orange">Services</span></h2>
-                <p class="lead text-gray mx-auto" style="max-width: 600px;">We create opportunities for students to
-                    explore cloud technologies and build the future.</p>
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-palette"></i>
+              </div>
+              <h4><a href="service-details.html">Brand Identity Design</a></h4>
+              <p>Donec vel sapien augue integer urna vel turpis cursus porta aliquam ligula eget ultricies.</p>
+              <div class="service-badge">Most Popular</div>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
+          </div>
 
-            <!-- Cards Row -->
-            <div class="row gy-4">
-                <!-- Card 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 text-start rounded-4 d-flex flex-column"
-                        style="border-bottom: 3px solid var(--primary-orange);">
-                        <div class="service-icon mb-4 rounded-3 d-inline-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px; background-color: rgba(255, 102, 0, 0.1); color: var(--primary-orange); font-size: 1.8rem;">
-                            <i class="bi bi-calendar-event-fill"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3"><a href="#" class="text-white text-decoration-none hover-orange">Events
-                                & Workshops</a></h4>
-                        <p class="text-gray mb-4 small mt-auto">Hands-on sessions with experts and builders. Learn
-                            modern cloud architectures.</p>
-                        <a href="#" class="text-orange text-decoration-none fw-semibold mt-auto small">
-                            <span>Learn More</span>
-                            <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 text-start rounded-4 d-flex flex-column"
-                        style="border-bottom: 3px solid var(--primary-orange);">
-                        <div class="service-icon mb-4 rounded-3 d-inline-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px; background-color: rgba(255, 102, 0, 0.1); color: var(--primary-orange); font-size: 1.8rem;">
-                            <i class="bi bi-code-slash"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3"><a href="#" class="text-white text-decoration-none hover-orange">Cloud
-                                Projects</a></h4>
-                        <p class="text-gray mb-4 small mt-auto">Build real-world projects using AWS services to bolster
-                            your portfolio.</p>
-                        <a href="#" class="text-orange text-decoration-none fw-semibold mt-auto small">
-                            <span>Learn More</span>
-                            <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 text-start rounded-4 d-flex flex-column"
-                        style="border-bottom: 3px solid var(--primary-orange);">
-                        <div class="service-icon mb-4 rounded-3 d-inline-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px; background-color: rgba(255, 102, 0, 0.1); color: var(--primary-orange); font-size: 1.8rem;">
-                            <i class="bi bi-people-fill"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3"><a href="#"
-                                class="text-white text-decoration-none hover-orange">Community</a></h4>
-                        <p class="text-gray mb-4 small mt-auto">Collaborate with peers who love clouad. Network with
-                            professionals.</p>
-                        <div class="service-badge position-absolute top-0 end-0 bg-dark-orange px-3 py-1 text-uppercase small fw-bold"
-                            style="border-bottom-left-radius: 12px; font-size: 0.7rem;">Most Popular</div>
-                        <a href="#" class="text-orange text-decoration-none fw-semibold mt-auto small">
-                            <span>Learn More</span>
-                            <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 4 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 text-start rounded-4 d-flex flex-column"
-                        style="border-bottom: 3px solid var(--primary-orange);">
-                        <div class="service-icon mb-4 rounded-3 d-inline-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px; background-color: rgba(255, 102, 0, 0.1); color: var(--primary-orange); font-size: 1.8rem;">
-                            <i class="bi bi-trophy-fill"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3"><a href="#"
-                                class="text-white text-decoration-none hover-orange">Competitions</a></h4>
-                        <p class="text-gray mb-4 small mt-auto">Participate, innovate, and win exciting prizes in our
-                            cloud hackathons.</p>
-                        <a href="#" class="text-orange text-decoration-none fw-semibold mt-auto small">
-                            <span>Learn More</span>
-                            <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 5 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 text-start rounded-4 d-flex flex-column"
-                        style="border-bottom: 3px solid var(--primary-orange);">
-                        <div class="service-icon mb-4 rounded-3 d-inline-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px; background-color: rgba(255, 102, 0, 0.1); color: var(--primary-orange); font-size: 1.8rem;">
-                            <i class="bi bi-shield-check"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3"><a href="#"
-                                class="text-white text-decoration-none hover-orange">Certifications</a></h4>
-                        <p class="text-gray mb-4 small mt-auto">We provide study groups and vouchers for AWS
-                            certifications.</p>
-                        <a href="#" class="text-orange text-decoration-none fw-semibold mt-auto small">
-                            <span>Learn More</span>
-                            <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Card 6 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="service-card p-4 h-100 text-start rounded-4 d-flex flex-column"
-                        style="border-bottom: 3px solid var(--primary-orange);">
-                        <div class="service-icon mb-4 rounded-3 d-inline-flex align-items-center justify-content-center"
-                            style="width: 60px; height: 60px; background-color: rgba(255, 102, 0, 0.1); color: var(--primary-orange); font-size: 1.8rem;">
-                            <i class="bi bi-journal-check"></i>
-                        </div>
-                        <h4 class="fw-bold mb-3"><a href="#"
-                                class="text-white text-decoration-none hover-orange">Mentorship</a></h4>
-                        <p class="text-gray mb-4 small mt-auto">Get connected with senior developers who will guide your
-                            cloud journey.</p>
-                        <a href="#" class="text-orange text-decoration-none fw-semibold mt-auto small">
-                            <span>Learn More</span>
-                            <i class="bi bi-arrow-right ms-1"></i>
-                        </a>
-                    </div>
-                </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-layout-text-window-reverse"></i>
+              </div>
+              <h4><a href="service-details.html">UI/UX Design</a></h4>
+              <p>Mauris blandit aliquet elit eget tincidunt nibh pulvinar rutrum tellus pellentesque eu.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
+          </div>
 
-            <!-- Services CTA matching Clarity -->
-            <div class="row mt-5 pt-3">
-                <div class="col-12 text-center">
-                    <div
-                        class="services-cta bg-secondary-black p-5 rounded-4 border border-secondary border-opacity-25 shadow">
-                        <h3 class="fw-bold text-white mb-3">Ready to Transform Your Cloud Skills?</h3>
-                        <p class="text-gray mb-4">Let's discuss your upcoming project and create something amazing
-                            together</p>
-                        <a href="#" class="btn btn-primary-custom px-4 py-3 fw-semibold">Join the Club Now</a>
-                    </div>
-                </div>
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-code-slash"></i>
+              </div>
+              <h4><a href="service-details.html">Web Development</a></h4>
+              <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
             </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-phone"></i>
+              </div>
+              <h4><a href="service-details.html">Mobile App Design</a></h4>
+              <p>Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur gravida.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-megaphone"></i>
+              </div>
+              <h4><a href="service-details.html">Digital Marketing</a></h4>
+              <p>Sed porttitor lectus nibh donec sollicitudin molestie malesuada proin eget tortor risus.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="bi bi-search"></i>
+              </div>
+              <h4><a href="service-details.html">SEO Optimization</a></h4>
+              <p>Curabitur arcu erat accumsan id imperdiet et porttitor at sem pellentesque habitant morbi.</p>
+              <a href="service-details.html" class="service-link">
+                <span>Learn More</span>
+                <i class="bi bi-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+
         </div>
-    </section>
 
-
-
-    <!-- Captain Section -->
-    <section id="captain" class="captain-section py-5">
-        <div class="container py-5">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div
-                        class="captain-card p-4 p-md-5 rounded-4 d-flex flex-column flex-md-row align-items-center gap-4 gap-md-5">
-                        <!-- Captain Image (Reusing Team Styles) -->
-                        <div class="team-img-wrapper mx-auto mx-md-0 position-relative mb-0 flex-shrink-0"
-                            style="width: 180px; height: 180px;">
-                            <img src="images/team_1.png" alt="Sarah Jenkins - Captain"
-                                class="img-fluid rounded-circle shadow w-100 h-100" style="object-fit: cover;">
-                            <div
-                                class="social-overlay d-flex justify-content-center align-items-center gap-3 rounded-circle">
-                                <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                                <a href="#" class="text-white" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                            </div>
-                        </div>
-
-                        <!-- Captain Info -->
-                        <div class="text-center text-md-start">
-                            <span class="badge bg-dark-orange mb-3 px-3 py-2 text-uppercase tracking-wider">Message from
-                                our Captain</span>
-                            <h3 class="display-6 fw-bold mb-2">Sarah Jenkins</h3>
-                            <p class="lead text-gray mb-4 fs-6 fst-italic">"The cloud is more than just infrastructure;
-                                it's a launchpad for innovation. My goal is to ensure every member of this club has the
-                                resources, guidance, and community support needed to build the future. Connect with me
-                                anytime!"</p>
-                            <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
-                                <button class="btn btn-primary-custom px-4 py-2 fw-semibold"><i
-                                        class="bi bi-envelope-fill me-2"></i> Message Sarah</button>
-                                <button class="btn btn-outline-custom px-4 py-2 fw-semibold"><i
-                                        class="bi bi-calendar-event me-2"></i> Book Coffee Chat</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="row mt-5">
+          <div class="col-12 text-center" data-aos="fade-up" data-aos-delay="400">
+            <div class="services-cta">
+              <h3>Ready to Transform Your Digital Presence?</h3>
+              <p>Let's discuss your project and create something amazing together</p>
+              <a href="service-details.html" class="btn btn-primary">Get Started Today</a>
             </div>
+          </div>
         </div>
-    </section>
 
-    <!-- Team Section -->
-    <section id="teams" class="team-section py-5">
-        <div class="container py-5">
-            <div class="row align-items-center g-5">
-                <!-- Left: Team Intro -->
-                <div class="col-lg-5">
-                    <div class="team-intro text-center text-lg-start pe-lg-4">
-                        <span class="text-orange fw-bold tracking-wider text-uppercase small d-block mb-3">Our
-                            Team</span>
-                        <h2 class="display-4 fw-bold mb-4">Meet the <span class="text-orange">AWS Club Leaders</span>
-                        </h2>
-                        <p class="lead text-gray mb-5">The passionate individuals driving our cloud community forward.
-                            We are dedicated to providing the best learning experience, organizing hackathons, and
-                            ensuring members succeed in their AWS journey.</p>
+      </div>
 
-                        <div
-                            class="stats-row d-flex justify-content-center justify-content-lg-start gap-4 mt-4 border-top border-secondary border-opacity-25 pt-4">
-                            <div class="stat-item pe-4 border-end border-secondary border-opacity-25">
-                                <span class="stat-number display-5 fw-bold text-white d-block">5+</span>
-                                <span class="stat-label text-gray small text-uppercase tracking-wider">Leaders</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-number display-5 fw-bold text-white d-block">100%</span>
-                                <span class="stat-label text-gray small text-uppercase tracking-wider">Committed</span>
-                            </div>
-                        </div>
-                        <button class="btn btn-outline-custom mt-5 px-4 py-3 fw-semibold d-none d-lg-inline-block">View
-                            All Members</button>
-                    </div>
-                </div>
-
-                <!-- Right: Hexagon Grid -->
-                <div class="col-lg-7">
-                    <div class="team-grid">
-                        <div class="member-hexagon">
-                            <img src="images/team_1.png" alt="Sarah Jenkins">
-                            <div class="member-overlay">
-                                <h5>Sarah Jenkins</h5>
-                                <span>Club President</span>
-                                <div class="social-icons">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-hexagon" style="margin-top: 50px;">
-                            <img src="images/team_2.png" alt="David Chen">
-                            <div class="member-overlay">
-                                <h5>David Chen</h5>
-                                <span>Cloud Architect</span>
-                                <div class="social-icons">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-hexagon" style="margin-top: -50px;">
-                            <img src="images/team_3.png" alt="Elena Rodriguez">
-                            <div class="member-overlay">
-                                <h5>Elena Rodriguez</h5>
-                                <span>Events Coord.</span>
-                                <div class="social-icons">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="member-hexagon">
-                            <img src="images/team_2.png" alt="Michael Chang">
-                            <div class="member-overlay">
-                                <h5>Michael Chang</h5>
-                                <span>Security Lead</span>
-                                <div class="social-icons">
-                                    <a href="#"><i class="bi bi-linkedin"></i></a>
-                                    <a href="#"><i class="bi bi-github"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Mobile View button -->
-            <div class="text-center d-lg-none mt-5">
-                <button class="btn btn-outline-custom px-4 py-3 fw-semibold">View All Members</button>
-            </div>
-        </div>
-    </section>
+    </section><!-- /Services Section -->
 
     <!-- Portfolio Section -->
-    <section id="portfolio"
-        class="portfolio-section py-5 bg-secondary-black border-top border-secondary border-opacity-25">
-        <div class="container py-5">
-            <!-- Section Title -->
-            <div class="text-center mb-5 pb-3">
-                <span class="text-orange fw-bold tracking-wider text-uppercase small d-block mb-3">Portfolio</span>
-                <h2 class="display-4 fw-bold mb-3">Our <span class="text-orange">Projects</span></h2>
-                <p class="lead text-gray mx-auto" style="max-width: 600px;">Check out some of the amazing projects built
-                    by our members across workshops and cloud hackathons.</p>
+    <section id="portfolio" class="portfolio section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
+            <li data-filter="*" class="filter-active">All Projects</li>
+            <li data-filter=".filter-web">Web Design</li>
+            <li data-filter=".filter-mobile">Mobile Apps</li>
+            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-ui">UI/UX</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-7.webp" alt="Creative Web Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-7.webp" class="glightbox action-btn preview-btn" title="Preview Project">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn details-btn" title="View Details">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="project-type">Web Design</span>
+                    <div class="project-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <span>4.8</span>
+                    </div>
+                  </div>
+                  <h3>Digital Innovation Platform</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+                  <div class="portfolio-tech">
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">Node.js</span>
+                    <span class="tech-badge">AWS</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="row g-4 pt-2">
-                <!-- Portfolio item 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-card position-relative overflow-hidden">
-                        <img src="images/about_image.png" class="img-fluid w-100" alt="Project 1"
-                            style="height: 300px; object-fit: cover;">
-                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
-                            <h4 class="text-white fw-bold mb-1">Serverless Voting App</h4>
-                            <p class="text-orange small fw-semibold mb-0">Serverless Architecture</p>
-                        </div>
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-mobile">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-8.webp" alt="Mobile App Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-8.webp" class="glightbox action-btn preview-btn" title="Preview Project">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn details-btn" title="View Details">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
                     </div>
+                  </div>
                 </div>
-                <!-- Portfolio item 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-card position-relative overflow-hidden">
-                        <!-- Using team images as placeholders since available in images foler -->
-                        <img src="images/team_1.png" class="img-fluid w-100 bg-tertiary-black" alt="Project 2"
-                            style="height: 300px; object-fit: cover;">
-                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
-                            <h4 class="text-white fw-bold mb-1">Cloud Resume Challenge</h4>
-                            <p class="text-orange small fw-semibold mb-0">Web Development & CI/CD</p>
-                        </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="project-type">Mobile App</span>
+                    <div class="project-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <span>4.9</span>
                     </div>
+                  </div>
+                  <h3>Smart Productivity App</h3>
+                  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+                  <div class="portfolio-tech">
+                    <span class="tech-badge">Flutter</span>
+                    <span class="tech-badge">Firebase</span>
+                    <span class="tech-badge">AI</span>
+                  </div>
                 </div>
-                <!-- Portfolio item 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="portfolio-card position-relative overflow-hidden">
-                        <img src="images/about_image.png" class="img-fluid w-100" alt="Project 3"
-                            style="height: 300px; object-fit: cover; filter: hue-rotate(90deg);">
-                        <div class="portfolio-overlay d-flex flex-column justify-content-end p-4">
-                            <h4 class="text-white fw-bold mb-1">AI Image Generator</h4>
-                            <p class="text-orange small fw-semibold mb-0">Machine Learning / AWS Bedrock</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
 
-            <div class="text-center mt-5 pt-4">
-                <a href="#" class="btn btn-outline-custom px-5 py-3 fw-semibold">View All Projects</a>
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-9.webp" alt="Branding Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-9.webp" class="glightbox action-btn preview-btn" title="Preview Project">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn details-btn" title="View Details">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="project-type">Branding</span>
+                    <div class="project-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <span>5.0</span>
+                    </div>
+                  </div>
+                  <h3>Modern Brand Identity</h3>
+                  <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur arcu erat, accumsan id.</p>
+                  <div class="portfolio-tech">
+                    <span class="tech-badge">Illustrator</span>
+                    <span class="tech-badge">Figma</span>
+                    <span class="tech-badge">Brand</span>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-ui">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-10.webp" alt="UI/UX Project" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-10.webp" class="glightbox action-btn preview-btn" title="Preview Project">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn details-btn" title="View Details">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="project-type">UI/UX</span>
+                    <div class="project-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <span>4.7</span>
+                    </div>
+                  </div>
+                  <h3>SaaS Dashboard Design</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                  <div class="portfolio-tech">
+                    <span class="tech-badge">Figma</span>
+                    <span class="tech-badge">Prototyping</span>
+                    <span class="tech-badge">UX</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-11.webp" alt="E-commerce Platform" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-11.webp" class="glightbox action-btn preview-btn" title="Preview Project">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn details-btn" title="View Details">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="project-type">E-commerce</span>
+                    <div class="project-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <span>4.6</span>
+                    </div>
+                  </div>
+                  <h3>E-commerce Platform</h3>
+                  <p>Donec rutrum congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed.</p>
+                  <div class="portfolio-tech">
+                    <span class="tech-badge">Shopify</span>
+                    <span class="tech-badge">React</span>
+                    <span class="tech-badge">API</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-mobile">
+              <div class="portfolio-wrapper">
+                <div class="portfolio-image">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-12.webp" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
+                  <div class="portfolio-hover">
+                    <div class="portfolio-actions">
+                      <a href="https://builder.bootstrapmade.com/demo/Clarity/assets/img/portfolio/portfolio-12.webp" class="glightbox action-btn preview-btn" title="Preview Project">
+                        <i class="bi bi-eye"></i>
+                      </a>
+                      <a href="#" class="action-btn details-btn" title="View Details">
+                        <i class="bi bi-arrow-up-right"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="portfolio-content">
+                  <div class="portfolio-meta">
+                    <span class="project-type">Fintech</span>
+                    <div class="project-rating">
+                      <i class="bi bi-star-fill"></i>
+                      <span>4.8</span>
+                    </div>
+                  </div>
+                  <h3>Fintech Mobile Solution</h3>
+                  <p>Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Sed porttitor lectus nibh.</p>
+                  <div class="portfolio-tech">
+                    <span class="tech-badge">Swift</span>
+                    <span class="tech-badge">Kotlin</span>
+                    <span class="tech-badge">Blockchain</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Portfolio Items Container -->
+
         </div>
-    </section>
+
+        <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
+          <h4>Ready to start your next project?</h4>
+          <p>Let's work together to bring your digital vision to life</p>
+          <div class="cta-buttons">
+            <a href="#contact" class="btn btn-primary">Start a Project</a>
+            <a href="#portfolio" class="btn btn-outline">View All Work</a>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Why Us</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-palette-fill"></i>
+              </div>
+              <h4>Creative Excellence</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+              <div class="feature-stats">
+                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="2">95</span>
+                <span class="stat-label">% Client Satisfaction</span>
+              </div>
+            </div>
+          </div><!-- End Feature Card -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-graph-up-arrow"></i>
+              </div>
+              <h4>Proven Results</h4>
+              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.</p>
+              <div class="feature-stats">
+                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="2">200</span>
+                <span class="stat-label">% ROI Increase</span>
+              </div>
+            </div>
+          </div><!-- End Feature Card -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="feature-card">
+              <div class="icon-wrapper">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <h4>Expert Team</h4>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis.</p>
+              <div class="feature-stats">
+                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2">50</span>
+                <span class="stat-label">+ Awards Won</span>
+              </div>
+            </div>
+          </div><!-- End Feature Card -->
+
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+            <div class="feature-showcase">
+              <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/illustration/illustration-14.webp" alt="Creative Process" class="img-fluid">
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+            <div class="feature-content">
+              <h3>Why Leading Brands Choose Us</h3>
+              <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
+
+              <div class="feature-list">
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5>Strategic Thinking</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5>Data-Driven Approach</h5>
+                    <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                  </div>
+                </div>
+
+                <div class="feature-item">
+                  <div class="feature-icon">
+                    <i class="bi bi-check-circle-fill"></i>
+                  </div>
+                  <div class="feature-text">
+                    <h5>24/7 Support</h5>
+                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cta-wrapper">
+                <a href="#" class="btn btn-primary">Start Your Project</a>
+                <a href="#" class="btn btn-outline">View Portfolio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Why Us Section -->
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section py-5">
-        <div class="container py-5">
-            <div class="text-center mb-5 pb-3">
-                <span class="text-orange fw-bold tracking-wider text-uppercase small d-block mb-3">Testimonials</span>
-                <h2 class="display-4 fw-bold mb-3">What Our <span class="text-orange">Members Say</span></h2>
-                <p class="lead text-gray mx-auto" style="max-width: 600px;">Hear from the students who have transformed
-                    their careers through our cloud programs.</p>
-            </div>
+    <section id="testimonials" class="testimonials section">
 
-            <div class="row g-4 justify-content-center pt-2">
-                <!-- Testimonial 1 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card p-4 rounded-4 h-100">
-                        <div class="d-flex align-items-center mb-4">
-                            <img src="images/team_1.png" alt="Jessica"
-                                class="rounded-circle border border-2 border-secondary"
-                                style="width: 65px; height: 65px; object-fit: cover;">
-                            <div class="ms-3">
-                                <h5 class="text-white mb-0 fw-bold">Jessica Wong</h5>
-                                <span class="text-gray small">Computer Science Student</span>
-                            </div>
-                        </div>
-                        <div class="text-orange mb-3" style="font-size: 0.9rem;">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="text-gray fst-italic mb-0">"Joining the AWS Club was the best decision I made. I
-                            landed my first internship thanks to the serverless projects I built during our weekend
-                            hackathons!"</p>
-                    </div>
-                </div>
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
 
-                <!-- Testimonial 2 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card p-4 rounded-4 h-100">
-                        <div class="d-flex align-items-center mb-4">
-                            <img src="images/team_2.png" alt="Marcus"
-                                class="rounded-circle border border-2 border-secondary"
-                                style="width: 65px; height: 65px; object-fit: cover;">
-                            <div class="ms-3">
-                                <h5 class="text-white mb-0 fw-bold">Marcus Johnson</h5>
-                                <span class="text-gray small">Cloud Engineering Lead</span>
-                            </div>
-                        </div>
-                        <div class="text-orange mb-3" style="font-size: 0.9rem;">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="text-gray fst-italic mb-0">"The certifications study groups were phenomenal. I passed
-                            my AWS Solutions Architect Associate exam on the first try with the resources provided
-                            here."</p>
-                    </div>
-                </div>
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-                <!-- Testimonial 3 -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="testimonial-card p-4 rounded-4 h-100">
-                        <div class="d-flex align-items-center mb-4">
-                            <img src="images/team_3.png" alt="Aisha"
-                                class="rounded-circle border border-2 border-secondary"
-                                style="width: 65px; height: 65px; object-fit: cover;">
-                            <div class="ms-3">
-                                <h5 class="text-white mb-0 fw-bold">Aisha Patel</h5>
-                                <span class="text-gray small">UX/UI Designer</span>
-                            </div>
-                        </div>
-                        <div class="text-orange mb-3" style="font-size: 0.9rem;">
-                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
-                                class="bi bi-star-half"></i>
-                        </div>
-                        <p class="text-gray fst-italic mb-0">"Even as a designer, the club welcomed me. I redesigned our
-                            club's cloud-hosted portfolio and learned so much about the intersection of design and
-                            tech."</p>
+        <div class="testimonials-slider swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 4000
+              },
+              "slidesPerView": 1,
+              "centeredSlides": true,
+              "spaceBetween": 20,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "768": {
+                  "slidesPerView": 1.5,
+                  "spaceBetween": 30
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 40
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-f-12.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Jennifer Martinez</h3>
+                    <span class="user-role">Product Designer</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
                     </div>
+                  </div>
                 </div>
-            </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>TechCorp</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-m-11.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Alexander Chen</h3>
+                    <span class="user-role">Frontend Engineer</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>InnovateLab</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-f-8.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Rachel Taylor</h3>
+                    <span class="user-role">Marketing Lead</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>GrowthCo</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-m-14.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Christopher Lee</h3>
+                    <span class="user-role">VP Engineering</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>DevStream</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+                <div class="testimonial-header">
+                  <div class="user-avatar">
+                    <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-f-5.webp" alt="Profile Image">
+                  </div>
+                  <div class="user-info">
+                    <h3>Amanda Rodriguez</h3>
+                    <span class="user-role">UX Researcher</span>
+                    <div class="rating">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <div class="quote-mark">
+                    <i class="bi bi-quote"></i>
+                  </div>
+                  <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+                </div>
+                <div class="testimonial-footer">
+                  <div class="company-badge">
+                    <i class="bi bi-building"></i>
+                    <span>UserFirst</span>
+                  </div>
+                  <div class="verified-badge">
+                    <i class="bi bi-patch-check-fill"></i>
+                    <span>Verified</span>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
-    </section>
 
-    <!-- Video Modal -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-xl">
-            <div class="modal-content bg-transparent border-0">
-                <div class="modal-header border-0 pb-0 justify-content-end p-2">
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Team</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row g-4">
+
+          <div class="col-lg-6">
+            <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
+              <div class="intro-content">
+                <h3>Meet Our Exceptional Team</h3>
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+                <div class="stats-row">
+                  <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Team Members</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">8</span>
+                    <span class="stat-label">Departments</span>
+                  </div>
+                  <div class="stat-item">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-label">Countries</span>
+                  </div>
                 </div>
-                <div class="modal-body p-0">
-                    <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg border border-warning border-opacity-25"
-                        style="background: #000;">
-                        <iframe id="projectVideo" src="" title="AWS Project Video" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="team-grid" data-aos="fade-left" data-aos-delay="200">
+              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="250">
+                <div class="hexagon-inner">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-f-3.webp" alt="Team member">
+                  <div class="member-overlay">
+                    <h5>Sarah Chen</h5>
+                    <span>Creative Director</span>
+                    <div class="social-icons">
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                      <a href="#"><i class="bi bi-twitter"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="300">
+                <div class="hexagon-inner">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-m-4.webp" alt="Team member">
+                  <div class="member-overlay">
+                    <h5>Marcus Johnson</h5>
+                    <span>Tech Lead</span>
+                    <div class="social-icons">
+                      <a href="#"><i class="bi bi-github"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="350">
+                <div class="hexagon-inner">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-f-8.webp" alt="Team member">
+                  <div class="member-overlay">
+                    <h5>Emma Rodriguez</h5>
+                    <span>Product Manager</span>
+                    <div class="social-icons">
+                      <a href="#"><i class="bi bi-instagram"></i></a>
+                      <a href="#"><i class="bi bi-dribbble"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="400">
+                <div class="hexagon-inner">
+                  <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-m-6.webp" alt="Team member">
+                  <div class="member-overlay">
+                    <h5>David Kim</h5>
+                    <span>UX Architect</span>
+                    <div class="social-icons">
+                      <a href="#"><i class="bi bi-behance"></i></a>
+                      <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
+
+        <div class="row mt-5">
+          <div class="col-12">
+            <div class="team-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
+              <h4 class="carousel-title">Leadership Team</h4>
+
+              <div class="leadership-slider swiper init-swiper">
+                <script type="application/json" class="swiper-config">
+                  {
+                    "loop": true,
+                    "speed": 600,
+                    "autoplay": {
+                      "delay": 4000
+                    },
+                    "slidesPerView": 1,
+                    "spaceBetween": 0,
+                    "pagination": {
+                      "el": ".swiper-pagination",
+                      "clickable": true
+                    },
+                    "breakpoints": {
+                      "768": {
+                        "slidesPerView": 2
+                      },
+                      "1024": {
+                        "slidesPerView": 3
+                      }
+                    }
+                  }
+                </script>
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-f-14.webp" alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Jennifer Walsh</h5>
+                        <span class="position">Chief Executive Officer</span>
+                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-linkedin"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-m-13.webp" alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Robert Martinez</h5>
+                        <span class="position">Chief Technology Officer</span>
+                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-github"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-f-5.webp" alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Lisa Thompson</h5>
+                        <span class="position">Head of Operations</span>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-twitter"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="swiper-slide">
+                    <div class="leader-card">
+                      <div class="leader-image">
+                        <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/person/person-m-9.webp" alt="Leader">
+                      </div>
+                      <div class="leader-info">
+                        <h5>Alex Garcia</h5>
+                        <span class="position">VP of Marketing</span>
+                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+                        <div class="leader-contact">
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-envelope"></i>
+                          </a>
+                          <a href="#" class="contact-btn">
+                            <i class="bi bi-instagram"></i>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-8 offset-lg-2">
+            <div class="join-team-cta" data-aos="fade-up" data-aos-delay="300">
+              <div class="cta-icon">
+                <i class="bi bi-rocket-takeoff"></i>
+              </div>
+              <div class="cta-content">
+                <h4>Ready to Join Our Mission?</h4>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
+                <div class="cta-actions">
+                  <a href="#" class="btn btn-primary">View Open Roles</a>
+                  <a href="#" class="btn btn-outline">Learn Our Culture</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Team Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="row align-items-center">
+          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+            <div class="contact-form-card">
+              <div class="form-header">
+                <div class="header-icon">
+                  <i class="bi bi-chat-dots-fill"></i>
+                </div>
+                <h3>Let's Start a Conversation</h3>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.</p>
+              </div>
+
+              <form action="forms/contact.php" method="post" class="php-email-form">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <input type="text" class="form-control" name="subject" placeholder="What's this about?" required="">
+                </div>
+
+                <div class="mb-4">
+                  <textarea class="form-control" name="message" rows="4" placeholder="Tell us more about your project..." required=""></textarea>
+                </div>
+
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+
+                <button type="submit" class="submit-btn">
+                  <span>Send Message</span>
+                  <i class="bi bi-send-fill"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+            <div class="contact-info-area">
+              <div class="info-header">
+                <h3>Ready to Transform Your Ideas?</h3>
+                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore.</p>
+              </div>
+
+              <div class="contact-methods">
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="250">
+                  <div class="card-icon">
+                    <i class="bi bi-envelope-at"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>Email Us</h5>
+                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b535e5757547b4b49545f4e584f5f5e565415585456">[email&#160;protected]</a></p>
+                    <span class="response-time">Response in 2-4 hours</span>
+                  </div>
+                </div>
+
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="300">
+                  <div class="card-icon">
+                    <i class="bi bi-telephone"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>Call Us</h5>
+                    <p>+1 (555) 987-6543</p>
+                    <span class="response-time">Available 9AM - 6PM EST</span>
+                  </div>
+                </div>
+
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="350">
+                  <div class="card-icon">
+                    <i class="bi bi-geo-alt"></i>
+                  </div>
+                  <div class="card-content">
+                    <h5>Visit Our Office</h5>
+                    <p>4821 Broadway Street, New York, NY 10013</p>
+                    <span class="response-time">Open Monday - Friday</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="additional-info" data-aos="fade-up" data-aos-delay="400">
+                <div class="info-stats">
+                  <div class="stat-item">
+                    <div class="stat-number">24h</div>
+                    <div class="stat-label">Average Response</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Client Satisfaction</div>
+                  </div>
+                  <div class="stat-item">
+                    <div class="stat-number">150+</div>
+                    <div class="stat-label">Projects Delivered</div>
+                  </div>
+                </div>
+
+                <div class="social-connect">
+                  <h6>Connect With Us</h6>
+                  <div class="social-links">
+                    <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                    <a href="#" class="social-link"><i class="bi bi-discord"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative dark-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Clarity</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>A108 Adam Street</p>
+            <p>New York, NY 535022</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
+            <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0b9beb6bf90b5a8b1bda0bcb5feb3bfbd">[email&#160;protected]</a></span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Hic solutasetp</h4>
+          <ul>
+            <li><a href="#">Molestiae accusamus iure</a></li>
+            <li><a href="#">Excepturi dignissimos</a></li>
+            <li><a href="#">Suscipit distinctio</a></li>
+            <li><a href="#">Dilecta</a></li>
+            <li><a href="#">Sit quas consectetur</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Nobis illum</h4>
+          <ul>
+            <li><a href="#">Ipsam</a></li>
+            <li><a href="#">Laudantium dolorum</a></li>
+            <li><a href="#">Dinera</a></li>
+            <li><a href="#">Trodelas</a></li>
+            <li><a href="#">Flexo</a></li>
+          </ul>
+        </div>
+
+      </div>
     </div>
 
-    <!-- Footer Section -->
-    <footer class="footer-section pt-5 pb-3">
-        <div class="container pt-4">
-            <div class="row gy-4">
-                <!-- About Column -->
-                <div class="col-lg-4 col-md-6 pe-lg-5">
-                    <a class="navbar-brand logo-text d-inline-block mb-3" href="#">
-                        <i class="bi bi-cloud-lightning-fill text-orange me-2"></i><span class="text-white">AWS</span>
-                        <span class="text-gray fs-6">Club</span>
-                    </a>
-                    <p class="text-gray small mb-4">Empowering students to build the future of technology through
-                        immersive, hands-on experiences with Amazon Web Services. We cultivate cloud excellence.</p>
-                    <!-- Social Links -->
-                    <div class="d-flex gap-3 social-footer">
-                        <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
-                        <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-                        <a href="#" aria-label="Discord"><i class="bi bi-discord"></i></a>
-                    </div>
-                </div>
+    <div class="container copyright text-center mt-4">
+      <p>Â© <span>Copyright</span> <strong class="px-1 sitename">Clarity</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
 
-                <!-- Quick Links Column -->
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-4 fw-bold">Explore</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="#about">About Us</a></li>
-                        <li class="mb-2"><a href="#what-we-do">What We Do</a></li>
-                        <li class="mb-2"><a href="#teams">Our Team</a></li>
-                        <li class="mb-2"><a href="#events">Events</a></li>
-                        <li class="mb-2"><a href="#captain">Captain's Message</a></li>
-                    </ul>
-                </div>
+  </footer>
 
-                <!-- Resources Column -->
-                <div class="col-lg-2 col-md-6">
-                    <h5 class="text-white mb-4 fw-bold">Resources</h5>
-                    <ul class="list-unstyled footer-links">
-                        <li class="mb-2"><a href="#">AWS Certifications</a></li>
-                        <li class="mb-2"><a href="#">Cloud Labs</a></li>
-                        <li class="mb-2"><a href="#">Community Forum</a></li>
-                        <li class="mb-2"><a href="#">Github Repo</a></li>
-                        <li class="mb-2"><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-                <!-- Contact Column -->
-                <div class="col-lg-4 col-md-6">
-                    <h5 class="text-white mb-4 fw-bold">Contact Us</h5>
-                    <ul class="list-unstyled contact-info">
-                        <li class="d-flex mb-3">
-                            <i class="bi bi-envelope-fill text-orange me-3 fs-5 mt-1"></i>
-                            <div>
-                                <span class="d-block text-white fw-semibold">Email Form</span>
-                                <a href="mailto:contact@awsclub.com"
-                                    class="text-gray small text-decoration-none">contact@awsclub.com</a>
-                            </div>
-                        </li>
-                        <li class="d-flex mb-3">
-                            <i class="bi bi-telephone-fill text-orange me-3 fs-5 mt-1"></i>
-                            <div>
-                                <span class="d-block text-white fw-semibold">Phone Support</span>
-                                <a href="tel:+1234567890" class="text-gray small text-decoration-none">+1 (234)
-                                    567-890</a>
-                            </div>
-                        </li>
-                        <li class="d-flex">
-                            <i class="bi bi-geo-alt-fill text-orange me-3 fs-5 mt-1"></i>
-                            <div>
-                                <span class="d-block text-white fw-semibold">Location HQ</span>
-                                <span class="text-gray small">123 Cloud Avenue, Tech District<br>Innovation City, IN
-                                    10101</span>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
-            <!-- Copyright Border -->
-            <div class="row mt-5">
-                <div class="col-12">
-                    <div class="border-top border-secondary border-opacity-25 pt-4 text-center">
-                        <p class="text-gray small mb-0">&copy; 2026 AWS Club. All rights reserved. Designed with <i
-                                class="bi bi-heart-fill text-orange mx-1"></i> for the cloud community.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+  <!-- Vendor JS Files -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
-    <!-- Bootstrap 5 JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+  <!-- Main JS File -->
+  <script src="js/main.js"></script>
+
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"68c5ca450bae485a842ff76066d69420","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 
 </html>
