@@ -56,20 +56,22 @@ document.addEventListener('DOMContentLoaded', () => {
             navbar.style.boxShadow = '0 4px 30px rgba(255, 102, 0, 0.08)';
         }
     });
-    // Video Modal Logic
+    // Video Modal Logic (YouTube Iframe)
     const videoModal = document.getElementById('videoModal');
     const projectVideo = document.getElementById('projectVideo');
+    // Using the requested YouTube video ID: dXSsyZuGx08
+    const youtubeSrc = "https://www.youtube.com/embed/dXSsyZuGx08?autoplay=1&rel=0";
     
     if (videoModal && projectVideo) {
-        // Stop video when modal closes
+        // Stop video by clearing src when modal closes
         videoModal.addEventListener('hidden.bs.modal', function () {
-            projectVideo.pause();
-            projectVideo.currentTime = 0;
+            projectVideo.setAttribute('src', '');
         });
 
-        // Auto-play video when modal opens
-        videoModal.addEventListener('shown.bs.modal', function () {
-            projectVideo.play();
+        // Auto-play video by injecting src immediately when modal starts to open
+        // Using show.bs.modal instead of shown.bs.modal for instant triggering
+        videoModal.addEventListener('show.bs.modal', function () {
+            projectVideo.setAttribute('src', youtubeSrc);
         });
     }
 
