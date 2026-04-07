@@ -21,22 +21,22 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #05071e; /* Background color for the entire website, including individual sections */
-  --default-color: #e8e7f7; /* Default color used for the majority of the text content across the entire website */
+  --background-color: #0b0b0b; /* Background color for the entire website, including individual sections */
+  --default-color: #d1d1d1; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #524dd3; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #131428; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --accent-color: #ff6600; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #151515; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #c8c6e3;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #03051f; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1f2240; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #c8c6e3; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;  /* The default color of the main navmenu links */
+  --nav-hover-color: #ff6600; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #0b0b0b; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ff6600; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -146,7 +146,7 @@ h6 {
 --------------------------------------------------------------*/
 .header {
   --background-color: rgba(255, 255, 255, 0);
-  --surface-color: #1b1933;
+  --surface-color: #111111;
   color: var(--default-color);
   background-color: var(--background-color);
   padding: 20px 0;
@@ -4207,8 +4207,31 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Starter Section Section
+# Portfolio CSS Fixes and Theme Colors Adjustments
 --------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
-}
+.portfolio-filters, .isotope-filters { padding: 0; margin: 0 auto 20px auto; list-style: none; text-align: center; }
+.portfolio-filters li, .isotope-filters li { cursor: pointer; display: inline-block; padding: 8px 20px 10px 20px; margin: 0; font-size: 15px; font-weight: 500; line-height: 1; margin-bottom: 5px; border-radius: 50px; transition: all 0.3s ease-in-out; background: var(--surface-color); color: var(--default-color); }
+.portfolio-filters li:hover, .portfolio-filters li.filter-active, .isotope-filters li:hover, .isotope-filters li.filter-active { color: var(--contrast-color); background: var(--accent-color); }
+.portfolio-item, .isotope-item { position: relative; overflow: hidden; }
+.portfolio-wrapper { position: relative; overflow: hidden; border-radius: 8px; background: var(--surface-color); }
+.portfolio-image { position: relative; overflow: hidden; }
+.portfolio-image img { transition: 0.3s; width: 100%; height: auto; display: block; }
+.portfolio-wrapper:hover .portfolio-image img { transform: scale(1.1); }
+.portfolio-hover { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); opacity: 0; transition: 0.3s; display: flex; align-items: center; justify-content: center; }
+.portfolio-wrapper:hover .portfolio-hover { opacity: 1; }
+.portfolio-actions { display: flex; }
+.portfolio-actions .action-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--accent-color); color: var(--contrast-color); border-radius: 50%; margin: 0 5px; transition: 0.3s; }
+.portfolio-actions .action-btn:hover { background: var(--contrast-color); color: var(--accent-color); }
+.portfolio-content { padding: 20px; }
+.portfolio-meta { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; }
+.project-type { color: var(--accent-color); font-weight: 500; }
+.project-rating { color: #ffc107; display: flex; align-items: center; gap: 4px; }
+.portfolio-content h3 { font-size: 20px; margin-bottom: 10px; color: var(--heading-color); }
+.portfolio-content p { color: var(--default-color); font-size: 14px; margin-bottom: 0; }
+.portfolio-tech { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 5px; }
+.tech-badge { display: inline-block; padding: 4px 10px; font-size: 13px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; color: var(--default-color); }
+
+/* Theme layout standard overrides */
+.card, .services .service-item, .features .feature-item { background-color: var(--surface-color) !important; border-color: #333 !important; color: var(--default-color); }
+.header { background-color: var(--background-color); }
+.footer { background-color: var(--surface-color); }
