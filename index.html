@@ -17,7 +17,9 @@
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -42,12 +44,14 @@
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+    <div
+      class="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="https://builder.bootstrapmade.com/demo/Clarity/assets/img/logo.webp" alt=""> -->
-        <h1 class="sitename">Clarity</h1>
+        <h1 class="sitename">CL<span class="text-orange fw-bolder" style="color: var(--primary-orange);">AWS</span>EM
+        </h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
@@ -55,10 +59,10 @@
           <li><a href="#hero" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
+          <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a> -->
+          <!-- <ul>
               <li><a href="#">Dropdown 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
@@ -72,7 +76,7 @@
               <li><a href="#">Dropdown 2</a></li>
               <li><a href="#">Dropdown 3</a></li>
               <li><a href="#">Dropdown 4</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -84,89 +88,87 @@
     </div>
   </header>
 
-  <main class="main">
+  <!-- Hero Section -->
+  <main id="home" class="hero-section text-center d-flex align-items-center justify-content-center">
+    <div class="container text-center">
+      <div class="hero-content mx-auto d-flex flex-column align-items-center">
+        <h1 class="display-3 fw-bold mb-4">Learn. Build. And Lead with <br> <span
+            class="fw-bolder text-orange highlight-text">Cloud</span></h1>
+        <p class="lead text-light mb-5 mx-auto" style="max-width: 800px; font-weight: 500;">AWS Club brings
+          together cloud enthusiasts to learn, build, and innovate using Amazon Web Services. Together, we
+          turn ideas into impact.</p>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero section">
+        <div class="d-flex justify-content-center align-items-center flex-wrap gap-4">
+          <button class="btn btn-primary-custom px-4 py-3 fw-semibold">Join the Club <i
+              class="bi bi-arrow-right ms-2"></i></button>
+          <button class="btn btn-outline-custom px-4 py-3 fw-semibold">Explore Events</button>
+          <button class="video-play-btn" data-bs-toggle="modal" data-bs-target="#videoModal" aria-label="Play Video"
+            title="Play Video">
+            <i class="bi bi-play-fill"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </main>
 
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="hero-content">
-              <h1>Transform Your Digital Presence</h1>
-              <p>We create innovative digital solutions that drive growth and elevate your brand. From web development to digital marketing, we're your partners in digital transformation.</p>
-              <div class="hero-buttons">
-                <a href="#" class="btn btn-primary">Get Started</a>
-                <a href="#" class="btn btn-outline">Our Work</a>
-              </div>
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1"></span>
-                  <span class="stat-label">Projects Completed</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="1"></span>
-                  <span class="stat-label">Client Satisfaction</span>
-                </div>
-                <div class="stat-item">
-                  <span class="stat-number purecounter" data-purecounter-start="0" data-purecounter-end="24" data-purecounter-duration="1"></span>
-                  <span class="stat-label">Team Members</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="hero-visual">
-              <div class="hero-image">
-                <img src="images/hero_bg.png" alt="Digital Agency Hero" class="img-fluid">
-              </div>
-            </div>
+  <!-- Video Modal -->
+  <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 pb-0 justify-content-end p-2">
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div class="ratio ratio-16x9 rounded overflow-hidden shadow-lg border border-warning border-opacity-25"
+            style="background: #000;">
+            <iframe id="projectVideo" src="" title="AWS Project Video" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
           </div>
         </div>
       </div>
+    </div>
+  </div>
 
-      <div class="hero-bg-elements">
-        <div class="bg-shape shape-1"></div>
-        <div class="bg-shape shape-2"></div>
-        <div class="bg-particles"></div>
-      </div>
+  <!-- About Section -->
+  <section id="about" class="about section">
 
-    </section><!-- /Hero Section -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-    <!-- About Section -->
-    <section id="about" class="about section">
+      <div class="row gy-5 align-items-center">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="content">
+            <h6 class="subtitle">Discover Our Story</h6>
+            <h2>Innovative Solutions for a Digital-First World</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
 
-        <div class="row gy-5 align-items-center">
+            <ul class="features-list">
+              <li><i class="bi bi-check-circle-fill"></i><span>Excepteur sint occaecat cupidatat non proident.</span>
+              </li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Nemo enim ipsam voluptatem quia voluptas sit.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><span>Duis aute irure dolor in reprehenderit in voluptate
+                  velit.</span></li>
+            </ul>
 
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="content">
-              <h6 class="subtitle">Discover Our Story</h6>
-              <h2>Innovative Solutions for a Digital-First World</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-
-              <ul class="features-list">
-                <li><i class="bi bi-check-circle-fill"></i><span>Excepteur sint occaecat cupidatat non proident.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i><span>Nemo enim ipsam voluptatem quia voluptas sit.</span></li>
-                <li><i class="bi bi-check-circle-fill"></i><span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              </ul>
-
-              <a href="#" class="btn btn-primary">Discover More</a>
-            </div>
+            <a href="#" class="btn btn-primary">Discover More</a>
           </div>
+        </div>
 
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
-            <div class="image-composition">
-              <div class="image-main">
-                <img src="images/about_image.png" alt="Modern office with a team working" class="img-fluid" loading="lazy">
-              </div>
-              <div class="image-secondary">
-                <img src="images/about_image.png" alt="Collaborative discussion" class="img-fluid" loading="lazy">
-              </div>
-              <div class="stats-card">
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="300">
+          <div class="image-composition">
+            <div class="image-main">
+              <img src="images/about_image.png" alt="Modern office with a team working" class="img-fluid"
+                loading="lazy">
+            </div>
+            <div class="image-secondary">
+              <img src="images/about_image.png" alt="Collaborative discussion" class="img-fluid" loading="lazy">
+            </div>
+            <!-- <div class="stats-card">
                 <div class="stats-item">
                   <h3>20+</h3>
                   <p>Years of Expertise</p>
@@ -175,24 +177,24 @@
                   <h3>500+</h3>
                   <p>Happy Clients</p>
                 </div>
-              </div>
-            </div>
+              </div> -->
           </div>
-
         </div>
 
       </div>
 
-    </section><!-- /About Section -->
+    </div>
 
-    <!-- Services Section -->
-    <section id="services" class="services section">
+  </section><!-- /About Section -->
 
-      <!-- Section Title -->
+  <!-- Services Section -->
+  <!-- <section id="services" class="services section">
+
+ 
       <div class="container section-title" data-aos="fade-up">
         <h2>Services</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div>
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -296,18 +298,80 @@
 
       </div>
 
-    </section><!-- /Services Section -->
+    </section> -->
+  <!-- /Services Section -->
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="portfolio section">
+  <!-- What We Do Section -->
+  <section id="what-we-do" class="what-we-do-section py-5">
+    <div class="container py-5 text-center">
+      <!-- Header -->
+      <div class="mb-5">
+        <span class="text-orange fw-bold tracking-wider text-uppercase small d-block mb-3">What We Do</span>
+        <h2 class="display-4 fw-bold mb-4">Learn. <span style="color: #8c52ff;">Connect.</span> <span
+            class="text-orange">Build.</span></h2>
+        <p class="lead text-gray mx-auto" style="max-width: 600px;">We create opportunities for students to
+          explore cloud technologies and build the future.</p>
+      </div>
 
-      <!-- Section Title -->
+      <!-- Cards Row -->
+      <div class="row g-4 justify-content-center">
+        <!-- Card 1 (Orange) -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card card-orange p-4 h-100 text-start rounded-4 d-flex flex-column">
+            <div
+              class="service-icon icon-orange mb-4 rounded-3 d-inline-flex align-items-center justify-content-center">
+              <i class="bi bi-calendar-event-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Events &<br>Workshops</h4>
+            <p class="text-gray mb-0 small mt-auto">Hands-on sessions with experts and builders.</p>
+          </div>
+        </div>
+        <!-- Card 2 (Blue) -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card card-blue p-4 h-100 text-start rounded-4 d-flex flex-column">
+            <div class="service-icon icon-blue mb-4 rounded-3 d-inline-flex align-items-center justify-content-center">
+              <i class="bi bi-code-slash"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Projects</h4>
+            <p class="text-gray mb-0 small mt-auto">Build real-world projects using AWS services.</p>
+          </div>
+        </div>
+        <!-- Card 3 (Green) -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card card-green p-4 h-100 text-start rounded-4 d-flex flex-column">
+            <div class="service-icon icon-green mb-4 rounded-3 d-inline-flex align-items-center justify-content-center">
+              <i class="bi bi-people-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Community</h4>
+            <p class="text-gray mb-0 small mt-auto">Collaborate with peers who love cloud.</p>
+          </div>
+        </div>
+        <!-- Card 4 (Purple) -->
+        <div class="col-sm-6 col-lg-3">
+          <div class="service-card card-purple p-4 h-100 text-start rounded-4 d-flex flex-column">
+            <div
+              class="service-icon icon-purple mb-4 rounded-3 d-inline-flex align-items-center justify-content-center">
+              <i class="bi bi-trophy-fill"></i>
+            </div>
+            <h4 class="fw-bold mb-3">Competitions</h4>
+            <p class="text-gray mb-0 small mt-auto">Participate, innovate, and win exciting prizes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio section">
+
+    <!-- 
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
         <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+      </div> -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <!-- <div class="container" data-aos="fade-up" data-aos-delay="100">
 
         <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="200">
@@ -316,9 +380,9 @@
             <li data-filter=".filter-mobile">Mobile Apps</li>
             <li data-filter=".filter-branding">Branding</li>
             <li data-filter=".filter-ui">UI/UX</li>
-          </ul><!-- End Portfolio Filters -->
+          </ul>
 
-          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
+         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="300">
             <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
               <div class="portfolio-wrapper">
                 <div class="portfolio-image">
@@ -385,9 +449,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-branding">
+    <!-- <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-branding">
               <div class="portfolio-wrapper">
                 <div class="portfolio-image">
                   <img src="images/hero_bg.png" alt="Branding Project" class="img-fluid" loading="lazy">
@@ -419,9 +483,9 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-ui">
+    <!-- <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-ui">
               <div class="portfolio-wrapper">
                 <div class="portfolio-image">
                   <img src="images/hero_bg.png" alt="UI/UX Project" class="img-fluid" loading="lazy">
@@ -437,234 +501,419 @@
                   </div>
                 </div>
                 <div class="portfolio-content">
-                  <div class="portfolio-meta">
+                   <div class="portfolio-meta">
                     <span class="project-type">UI/UX</span>
                     <div class="project-rating">
                       <i class="bi bi-star-fill"></i>
                       <span>4.7</span>
                     </div>
-                  </div>
-                  <h3>SaaS Dashboard Design</h3>
-                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                  <div class="portfolio-tech">
+                  </div> -->
+    <!-- <h3>SaaS Dashboard Design</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p> -->
+    <!-- <div class="portfolio-tech">
                     <span class="tech-badge">Figma</span>
                     <span class="tech-badge">Prototyping</span>
                     <span class="tech-badge">UX</span>
-                  </div>
-                </div>
+                  </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div>  -->
+
+
+
+    <!-- </div> -->
+
+    <div class="container portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
+      <h4>Ready to start your next project?</h4>
+      <p>Let's work together to bring your digital vision to life</p>
+      <div class="cta-buttons">
+        <a href="#contact" class="btn btn-primary">Start a Project</a>
+        <a href="#portfolio" class="btn btn-outline">View All Work</a>
+      </div>
+    </div>
+
+    </div>
+
+  </section>
+  <!-- /Portfolio Section -->
+
+
+
+
+  <div class="container " style="margin-top: 150px;">
+    <p class="mt-5" style="color: var(--primary-orange); font-weight: 600; letter-spacing: 2px;">STEPS</p><span>
+      <hr style="color: var(--primary-orange); opacity: 1;" width="150px">
+    </span>
+    <h2 class="text-white mt-4 fw-bold">How we Work</h2>
+  </div>
+  <div class="container mt-5">
+    <div class="row mt-5 align-items-center work-step-card">
+      <div class="col-sm-3 col-lg-2 col-12 p-3 text-center">
+        <button type="button"
+          class="btn rounded-circle d-flex align-items-center justify-content-center mx-auto work-step-icon"
+          style="width: 80px; height: 80px; background-color: var(--surface-color); border: 2px solid var(--primary-orange); color: var(--primary-orange);"><i
+            class="bi bi-lightbulb" style="font-size: 35px;"></i></button>
+      </div>
+      <div class="col-sm-9 col-lg-10 col-12 rounded p-4 work-step-content"
+        style="background-color: var(--surface-color); border-left: 4px solid var(--primary-orange);">
+        <h6 style="color: var(--primary-orange); font-weight: 600;">Step 01</h6>
+        <h3 class="text-white fw-bold mb-3">Initial Consulation</h3>
+        <p style="color: #999; margin-bottom: 0;">Conducting thorough discovery sessions to understand your business
+          requirements and objectives. Our expert team analyzes your needs to create a customized approach.</p>
+      </div>
+    </div>
+  </div>
+  <div class="container mt-5">
+    <div class="row mt-5 align-items-center flex-column-reverse flex-sm-row work-step-card">
+      <div class="col-sm-9 col-lg-10 col-12 rounded p-4 work-step-content"
+        style="background-color: var(--surface-color); border-right: 4px solid var(--primary-orange);">
+        <h6 style="color: var(--primary-orange); font-weight: 600;">Step 02</h6>
+        <h3 class="text-white fw-bold mb-3">Planning & Strategy</h3>
+        <p style="color: #999; margin-bottom: 0;">Developing comprehensive strategies and detailed project plans based
+          on the initial consultation. We create actionable roadmaps with clear milestones and deliverables.</p>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-12 p-3 text-center mb-4 mb-sm-0">
+        <button type="button"
+          class="btn rounded-circle d-flex align-items-center justify-content-center mx-auto work-step-icon"
+          style="width: 80px; height: 80px; background-color: var(--surface-color); border: 2px solid var(--primary-orange); color: var(--primary-orange);"><i
+            class="bi bi-gear" style="font-size: 35px;"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row mt-5 align-items-center work-step-card">
+      <div class="col-sm-3 col-lg-2 col-12 p-3 text-center">
+        <button type="button"
+          class="btn rounded-circle d-flex align-items-center justify-content-center mx-auto work-step-icon"
+          style="width: 80px; height: 80px; background-color: var(--surface-color); border: 2px solid var(--primary-orange); color: var(--primary-orange);"><i
+            class="bi bi-bar-chart" style="font-size: 35px;"></i></button>
+      </div>
+      <div class="col-sm-9 col-lg-10 col-12 rounded p-4 work-step-content"
+        style="background-color: var(--surface-color); border-left: 4px solid var(--primary-orange);">
+        <h6 style="color: var(--primary-orange); font-weight: 600;">Step 03</h6>
+        <h3 class="text-white fw-bold mb-3">Development Phase</h3>
+        <p style="color: #999; margin-bottom: 0;">Executing the planned strategies with precision and agility. Our team
+          implements solutions while maintaining constant communication and progress updates.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row mt-5 align-items-center flex-column-reverse flex-sm-row work-step-card">
+      <div class="col-sm-9 col-lg-10 col-12 rounded p-4 work-step-content"
+        style="background-color: var(--surface-color); border-right: 4px solid var(--primary-orange);">
+        <h6 style="color: var(--primary-orange); font-weight: 600;">Step 04</h6>
+        <h3 class="text-white fw-bold mb-3">Launch & Support</h3>
+        <p style="color: #999; margin-bottom: 0;">Ensuring smooth deployment and providing ongoing support for
+          implemented solutions. We monitor performance and make necessary adjustments for optimal results.</p>
+      </div>
+      <div class="col-sm-3 col-lg-2 col-12 p-3 text-center mb-4 mb-sm-0">
+        <button type="button"
+          class="btn rounded-circle d-flex align-items-center justify-content-center mx-auto work-step-icon"
+          style="width: 80px; height: 80px; background-color: var(--surface-color); border: 2px solid var(--primary-orange); color: var(--primary-orange);"><i
+            class="bi bi-check-circle" style="font-size: 35px;"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Captain Section -->
+  <section id="captain" class="captain-section py-5">
+    <div class="container py-5">
+      <div class="mb-5 text-center">
+        <span class="text-orange fw-bold tracking-wider text-uppercase small d-block mb-3">Our Leader</span>
+        <h2 class="display-4 fw-bold mb-4">Meet Our <span class="text-orange">Captain</span></h2>
+        <p class="lead text-gray mx-auto" style="max-width: 600px;">The visionary guiding our cloud journey.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div
+            class="captain-card p-4 p-md-5 rounded-4 d-flex flex-column flex-md-row align-items-center gap-4 gap-md-5">
+            <!-- Captain Image (Reusing Team Styles) -->
+            <div class="team-img-wrapper mx-auto mx-md-0 position-relative mb-0 flex-shrink-0"
+              style="width: 180px; height: 180px;">
+              <img src="images/team_1.png" alt="Sarah Jenkins - Captain"
+                class="img-fluid rounded-circle shadow w-100 h-100" style="object-fit: cover;">
+              <div class="social-overlay d-flex justify-content-center align-items-center gap-3 rounded-circle">
+                <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-white" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
               </div>
             </div>
 
-            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-wrapper">
-                <div class="portfolio-image">
-                  <img src="images/hero_bg.png" alt="E-commerce Platform" class="img-fluid" loading="lazy">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-actions">
-                      <a href="images/hero_bg.png" class="glightbox action-btn preview-btn" title="Preview Project">
-                        <i class="bi bi-eye"></i>
-                      </a>
-                      <a href="#" class="action-btn details-btn" title="View Details">
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="project-type">E-commerce</span>
-                    <div class="project-rating">
-                      <i class="bi bi-star-fill"></i>
-                      <span>4.6</span>
-                    </div>
-                  </div>
-                  <h3>E-commerce Platform</h3>
-                  <p>Donec rutrum congue leo eget malesuada. Vivamus magna justo, lacinia eget consectetur sed.</p>
-                  <div class="portfolio-tech">
-                    <span class="tech-badge">Shopify</span>
-                    <span class="tech-badge">React</span>
-                    <span class="tech-badge">API</span>
-                  </div>
-                </div>
+            <!-- Captain Info -->
+            <div class="text-center text-md-start">
+              <span class="badge bg-dark-orange mb-3 px-3 py-2 text-uppercase tracking-wider">Message from
+                our Captain</span>
+              <h3 class="display-6 fw-bold mb-2">Sarah Jenkins</h3>
+              <p class="lead text-gray mb-4 fs-6 fst-italic">"The cloud is more than just infrastructure;
+                it's a launchpad for innovation. My goal is to ensure every member of this club has the
+                resources, guidance, and community support needed to build the future. Connect with me
+                anytime!"</p>
+              <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                <button class="btn btn-primary-custom px-4 py-2 fw-semibold"><i class="bi bi-envelope-fill me-2"></i>
+                  Message Sarah</button>
+                <button class="btn btn-outline-custom px-4 py-2 fw-semibold"><i class="bi bi-calendar-event me-2"></i>
+                  Book Coffee Chat</button>
               </div>
             </div>
-
-            <div class="col-xl-4 col-lg-6 portfolio-item isotope-item filter-mobile">
-              <div class="portfolio-wrapper">
-                <div class="portfolio-image">
-                  <img src="images/hero_bg.png" alt="Fintech Mobile App" class="img-fluid" loading="lazy">
-                  <div class="portfolio-hover">
-                    <div class="portfolio-actions">
-                      <a href="images/hero_bg.png" class="glightbox action-btn preview-btn" title="Preview Project">
-                        <i class="bi bi-eye"></i>
-                      </a>
-                      <a href="#" class="action-btn details-btn" title="View Details">
-                        <i class="bi bi-arrow-up-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="portfolio-content">
-                  <div class="portfolio-meta">
-                    <span class="project-type">Fintech</span>
-                    <div class="project-rating">
-                      <i class="bi bi-star-fill"></i>
-                      <span>4.8</span>
-                    </div>
-                  </div>
-                  <h3>Fintech Mobile Solution</h3>
-                  <p>Cras ultricies ligula sed magna dictum porta. Proin eget tortor risus. Sed porttitor lectus nibh.</p>
-                  <div class="portfolio-tech">
-                    <span class="tech-badge">Swift</span>
-                    <span class="tech-badge">Kotlin</span>
-                    <span class="tech-badge">Blockchain</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div><!-- End Portfolio Items Container -->
-
-        </div>
-
-        <div class="portfolio-cta text-center" data-aos="fade-up" data-aos-delay="400">
-          <h4>Ready to start your next project?</h4>
-          <p>Let's work together to bring your digital vision to life</p>
-          <div class="cta-buttons">
-            <a href="#contact" class="btn btn-primary">Start a Project</a>
-            <a href="#portfolio" class="btn btn-outline">View All Work</a>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Team Section -->
+  <section id="teams" class="team-section py-5">
+    <div class="container py-5 text-center">
+      <!-- Header -->
+      <div class="mb-5">
+        <span class="text-orange fw-bold tracking-wider text-uppercase small d-block mb-3">Our Team</span>
+        <h2 class="display-4 fw-bold mb-4">Meet the <span class="text-orange">AWS Club Leaders</span></h2>
+        <p class="lead text-gray mx-auto" style="max-width: 600px;">The passionate individuals driving our cloud
+          community forward.</p>
+      </div>
+
+      <!-- Team Slider Wrapper -->
+      <div class="position-relative mt-4">
+
+
+        <!-- Team Cards Slider -->
+        <div id="teamSlider" class="team-slider-container px-2 text-start">
+          <!-- Member 1 -->
+          <div class="team-slider-item">
+            <div class="team-card p-4 rounded-4 position-relative h-100 text-center">
+              <div class="team-img-wrapper mx-auto mb-4 position-relative">
+                <img src="images/team_1.png" alt="Sarah Jenkins" class="img-fluid rounded-circle shadow">
+                <div class="social-overlay d-flex justify-content-center align-items-center gap-3 rounded-circle">
+                  <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-white" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <h4 class="fw-bold mb-1">Sarah Jenkins</h4>
+              <p class="text-orange small fw-semibold mb-3">Club President / Tech Lead</p>
+              <p class="text-gray small mb-0">Strategic leader passionate about spreading cloud knowledge
+                and orchestrating community events.</p>
+            </div>
+          </div>
+          <!-- Member 2 -->
+          <div class="team-slider-item">
+            <div class="team-card p-4 rounded-4 position-relative h-100 text-center">
+              <div class="team-img-wrapper mx-auto mb-4 position-relative"
+                style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                <img src="images/team_2.png" alt="David Chen" class="img-fluid rounded-circle shadow">
+                <div class="social-overlay d-flex justify-content-center align-items-center gap-3 rounded-circle"
+                  style="background: rgba(79, 172, 254, 0.85);">
+                  <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-white" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <h4 class="fw-bold mb-1">David Chen</h4>
+              <p class="text-info small fw-semibold mb-3">Cloud Architect</p>
+              <p class="text-gray small mb-0">Specializes in serverless tech and infrastructure. Runs our
+                hands-on workshops and coding sessions.</p>
+            </div>
+          </div>
+          <!-- Member 3 -->
+          <div class="team-slider-item">
+            <div class="team-card p-4 rounded-4 position-relative h-100 text-center">
+              <div class="team-img-wrapper mx-auto mb-4 position-relative"
+                style="background: linear-gradient(135deg, #4caf50, #8bc34a);">
+                <img src="images/team_3.png" alt="Elena Rodriguez" class="img-fluid rounded-circle shadow">
+                <div class="social-overlay d-flex justify-content-center align-items-center gap-3 rounded-circle"
+                  style="background: rgba(76, 175, 80, 0.85);">
+                  <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-white" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <h4 class="fw-bold mb-1">Elena Rodriguez</h4>
+              <p class="text-success small fw-semibold mb-3">Events Coordinator</p>
+              <p class="text-gray small mb-0">The creative mind behind our hackathons and networking
+                sessions with industry professionals.</p>
+            </div>
+          </div>
+          <!-- Member 4 -->
+          <div class="team-slider-item">
+            <div class="team-card p-4 rounded-4 position-relative h-100 text-center">
+              <div class="team-img-wrapper mx-auto mb-4 position-relative"
+                style="background: linear-gradient(135deg, #a855f7, #c084fc);">
+                <img src="images/team_2.png" alt="Michael Chang" class="img-fluid rounded-circle shadow">
+                <div class="social-overlay d-flex justify-content-center align-items-center gap-3 rounded-circle"
+                  style="background: rgba(168, 85, 247, 0.85);">
+                  <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-white" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <h4 class="fw-bold mb-1">Michael Chang</h4>
+              <p class="small fw-semibold mb-3" style="color: #a855f7;">Cloud Security Lead</p>
+              <p class="text-gray small mb-0">Ensuring best practices in security and compliance during
+                our cloud architecture workshops.</p>
+            </div>
+          </div>
+          <!-- Member 5 -->
+          <div class="team-slider-item">
+            <div class="team-card p-4 rounded-4 position-relative h-100 text-center">
+              <div class="team-img-wrapper mx-auto mb-4 position-relative"
+                style="background: linear-gradient(135deg, #ffb74d, #ff9800);">
+                <img src="images/team_1.png" alt="Aisha Patel" class="img-fluid rounded-circle shadow">
+                <div class="social-overlay d-flex justify-content-center align-items-center gap-3 rounded-circle"
+                  style="background: rgba(255, 152, 0, 0.85);">
+                  <a href="#" class="text-white" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="text-white" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                </div>
+              </div>
+              <h4 class="fw-bold mb-1">Aisha Patel</h4>
+              <p class="text-warning small fw-semibold mb-3">Hackathon Manager</p>
+              <p class="text-gray small mb-0">Orchestrates massive competitive code jams and manages our
+                AWS credits relationships.</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+      <!-- Mobile scroll hint -->
+      <div class="d-flex justify-content-center mt-3 gap-2 d-md-none text-gray small w-100 align-items-center">
+        <i class="bi bi-arrow-left"></i> <span>Swipe for more</span> <i class="bi bi-arrow-right"></i>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Why Us Section -->
+  <section id="why-us" class="why-us section">
+
+
+    <!-- <div class="container section-title" data-aos="fade-up">
+      <h2>Why Us</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div> -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row g-4">
+
+        <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="feature-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-palette-fill"></i>
+            </div>
+            <h4>Creative Excellence</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua ut enim ad minim veniam.</p>
+            <div class="feature-stats">
+              <span class="stat-number" data-purecounter-start="0" data-purecounter-end="95"
+                data-purecounter-duration="2">95</span>
+              <span class="stat-label">% Client Satisfaction</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="feature-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-graph-up-arrow"></i>
+            </div>
+            <h4>Proven Results</h4>
+            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat duis aute irure dolor in reprehenderit.</p>
+            <div class="feature-stats">
+              <span class="stat-number" data-purecounter-start="0" data-purecounter-end="200"
+                data-purecounter-duration="2">200</span>
+              <span class="stat-label">% ROI Increase</span>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="feature-card">
+            <div class="icon-wrapper">
+              <i class="bi bi-award-fill"></i>
+            </div>
+            <h4>Expert Team</h4>
+            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+              laborum sed ut perspiciatis unde omnis.</p>
+            <div class="feature-stats">
+              <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50"
+                data-purecounter-duration="2">50</span>
+              <span class="stat-label">+ Awards Won</span>
+            </div>
+          </div>
+        </div> -->
 
       </div>
 
-    </section><!-- /Portfolio Section -->
-
-    <!-- Why Us Section -->
-    <section id="why-us" class="why-us section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Why Us</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="feature-card">
-              <div class="icon-wrapper">
-                <i class="bi bi-palette-fill"></i>
-              </div>
-              <h4>Creative Excellence</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
-              <div class="feature-stats">
-                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="95" data-purecounter-duration="2">95</span>
-                <span class="stat-label">% Client Satisfaction</span>
-              </div>
-            </div>
-          </div><!-- End Feature Card -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="feature-card">
-              <div class="icon-wrapper">
-                <i class="bi bi-graph-up-arrow"></i>
-              </div>
-              <h4>Proven Results</h4>
-              <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit.</p>
-              <div class="feature-stats">
-                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="200" data-purecounter-duration="2">200</span>
-                <span class="stat-label">% ROI Increase</span>
-              </div>
-            </div>
-          </div><!-- End Feature Card -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="feature-card">
-              <div class="icon-wrapper">
-                <i class="bi bi-award-fill"></i>
-              </div>
-              <h4>Expert Team</h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum sed ut perspiciatis unde omnis.</p>
-              <div class="feature-stats">
-                <span class="stat-number" data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="2">50</span>
-                <span class="stat-label">+ Awards Won</span>
-              </div>
-            </div>
-          </div><!-- End Feature Card -->
-
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-            <div class="feature-showcase">
-              <img src="images/about_image.png" alt="Creative Process" class="img-fluid">
-            </div>
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
-            <div class="feature-content">
-              <h3>Why Leading Brands Choose Us</h3>
-              <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat.</p>
-
-              <div class="feature-list">
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="bi bi-check-circle-fill"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h5>Strategic Thinking</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
-                  </div>
-                </div>
-
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="bi bi-check-circle-fill"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h5>Data-Driven Approach</h5>
-                    <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
-                  </div>
-                </div>
-
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="bi bi-check-circle-fill"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h5>24/7 Support</h5>
-                    <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="cta-wrapper">
-                <a href="#" class="btn btn-primary">Start Your Project</a>
-                <a href="#" class="btn btn-outline">View Portfolio</a>
-              </div>
-            </div>
+      <div class="row mt-5">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="feature-showcase">
+            <img src="images/about_image.png" alt="Creative Process" class="img-fluid">
           </div>
         </div>
 
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="feature-content">
+            <h3>Why Leading Brands Choose Us</h3>
+            <p class="lead">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+              pariatur excepteur sint occaecat.</p>
+
+            <div class="feature-list">
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <div class="feature-text">
+                  <h5>Strategic Thinking</h5>
+                  <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <div class="feature-text">
+                  <h5>Data-Driven Approach</h5>
+                  <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</p>
+                </div>
+              </div>
+
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="bi bi-check-circle-fill"></i>
+                </div>
+                <div class="feature-text">
+                  <h5>24/7 Support</h5>
+                  <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="cta-wrapper">
+              <a href="#" class="btn btn-primary">Start Your Project</a>
+              <a href="#" class="btn btn-outline">View Portfolio</a>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section><!-- /Why Us Section -->
+    </div>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials section">
+  </section>
+  <!-- /Why Us Section -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Testimonials</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <!-- Testimonials Section -->
+  <!-- <section id="testimonials" class="testimonials section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
+   
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Testimonials</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div>
 
-        <div class="testimonials-slider swiper init-swiper">
-          <script type="application/json" class="swiper-config">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="testimonials-slider swiper init-swiper">
+        <script type="application/json" class="swiper-config">
             {
               "loop": true,
               "speed": 600,
@@ -691,566 +940,334 @@
               }
             }
           </script>
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
-                <div class="testimonial-header">
-                  <div class="user-avatar">
-                    <img src="images/team_1.png" alt="Profile Image">
-                  </div>
-                  <div class="user-info">
-                    <h3>Jennifer Martinez</h3>
-                    <span class="user-role">Product Designer</span>
-                    <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="testimonial-header">
+                <div class="user-avatar">
+                  <img src="images/team_1.png" alt="Profile Image">
                 </div>
-                <div class="testimonial-content">
-                  <div class="quote-mark">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <div class="company-badge">
-                    <i class="bi bi-building"></i>
-                    <span>TechCorp</span>
-                  </div>
-                  <div class="verified-badge">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <span>Verified</span>
+                <div class="user-info">
+                  <h3>Jennifer Martinez</h3>
+                  <span class="user-role">Product Designer</span>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
                   </div>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
-                <div class="testimonial-header">
-                  <div class="user-avatar">
-                    <img src="images/team_2.png" alt="Profile Image">
-                  </div>
-                  <div class="user-info">
-                    <h3>Alexander Chen</h3>
-                    <span class="user-role">Frontend Engineer</span>
-                    <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
+              <div class="testimonial-content">
+                <div class="quote-mark">
+                  <i class="bi bi-quote"></i>
                 </div>
-                <div class="testimonial-content">
-                  <div class="quote-mark">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                  laborum consectetur adipiscing elit.</p>
+              </div>
+              <div class="testimonial-footer">
+                <div class="company-badge">
+                  <i class="bi bi-building"></i>
+                  <span>TechCorp</span>
                 </div>
-                <div class="testimonial-footer">
-                  <div class="company-badge">
-                    <i class="bi bi-building"></i>
-                    <span>InnovateLab</span>
-                  </div>
-                  <div class="verified-badge">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <span>Verified</span>
-                  </div>
+                <div class="verified-badge">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Verified</span>
                 </div>
               </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
-                <div class="testimonial-header">
-                  <div class="user-avatar">
-                    <img src="images/team_3.png" alt="Profile Image">
-                  </div>
-                  <div class="user-info">
-                    <h3>Rachel Taylor</h3>
-                    <span class="user-role">Marketing Lead</span>
-                    <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <div class="quote-mark">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat non proident.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <div class="company-badge">
-                    <i class="bi bi-building"></i>
-                    <span>GrowthCo</span>
-                  </div>
-                  <div class="verified-badge">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <span>Verified</span>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
-                <div class="testimonial-header">
-                  <div class="user-avatar">
-                    <img src="images/team_1.png" alt="Profile Image">
-                  </div>
-                  <div class="user-info">
-                    <h3>Christopher Lee</h3>
-                    <span class="user-role">VP Engineering</span>
-                    <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <div class="quote-mark">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <div class="company-badge">
-                    <i class="bi bi-building"></i>
-                    <span>DevStream</span>
-                  </div>
-                  <div class="verified-badge">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <span>Verified</span>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
-                <div class="testimonial-header">
-                  <div class="user-avatar">
-                    <img src="images/team_2.png" alt="Profile Image">
-                  </div>
-                  <div class="user-info">
-                    <h3>Amanda Rodriguez</h3>
-                    <span class="user-role">UX Researcher</span>
-                    <div class="rating">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="testimonial-content">
-                  <div class="quote-mark">
-                    <i class="bi bi-quote"></i>
-                  </div>
-                  <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
-                </div>
-                <div class="testimonial-footer">
-                  <div class="company-badge">
-                    <i class="bi bi-building"></i>
-                    <span>UserFirst</span>
-                  </div>
-                  <div class="verified-badge">
-                    <i class="bi bi-patch-check-fill"></i>
-                    <span>Verified</span>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+            </div>
           </div>
-          <div class="swiper-pagination"></div>
-        </div>
 
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="testimonial-header">
+                <div class="user-avatar">
+                  <img src="images/team_2.png" alt="Profile Image">
+                </div>
+                <div class="user-info">
+                  <h3>Alexander Chen</h3>
+                  <span class="user-role">Frontend Engineer</span>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="quote-mark">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                  nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+              </div>
+              <div class="testimonial-footer">
+                <div class="company-badge">
+                  <i class="bi bi-building"></i>
+                  <span>InnovateLab</span>
+                </div>
+                <div class="verified-badge">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="300">
+              <div class="testimonial-header">
+                <div class="user-avatar">
+                  <img src="images/team_3.png" alt="Profile Image">
+                </div>
+                <div class="user-info">
+                  <h3>Rachel Taylor</h3>
+                  <span class="user-role">Marketing Lead</span>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="quote-mark">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                  excepteur sint occaecat cupidatat non proident.</p>
+              </div>
+              <div class="testimonial-footer">
+                <div class="company-badge">
+                  <i class="bi bi-building"></i>
+                  <span>GrowthCo</span>
+                </div>
+                <div class="verified-badge">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="100">
+              <div class="testimonial-header">
+                <div class="user-avatar">
+                  <img src="images/team_1.png" alt="Profile Image">
+                </div>
+                <div class="user-info">
+                  <h3>Christopher Lee</h3>
+                  <span class="user-role">VP Engineering</span>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="quote-mark">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua enim ad minim veniam.</p>
+              </div>
+              <div class="testimonial-footer">
+                <div class="company-badge">
+                  <i class="bi bi-building"></i>
+                  <span>DevStream</span>
+                </div>
+                <div class="verified-badge">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Verified</span>
+                </div>
+              </div>
+            </div>
+          </div
+          <div class="swiper-slide">
+            <div class="testimonial-card" data-aos="zoom-in" data-aos-delay="200">
+              <div class="testimonial-header">
+                <div class="user-avatar">
+                  <img src="images/team_2.png" alt="Profile Image">
+                </div>
+                <div class="user-info">
+                  <h3>Amanda Rodriguez</h3>
+                  <span class="user-role">UX Researcher</span>
+                  <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-content">
+                <div class="quote-mark">
+                  <i class="bi bi-quote"></i>
+                </div>
+                <p>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure
+                  dolor in reprehenderit in voluptate velit esse.</p>
+              </div>
+              <div class="testimonial-footer">
+                <div class="company-badge">
+                  <i class="bi bi-building"></i>
+                  <span>UserFirst</span>
+                </div>
+                <div class="verified-badge">
+                  <i class="bi bi-patch-check-fill"></i>
+                  <span>Verified</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
 
-    </section><!-- /Testimonials Section -->
+    </div>
 
-    <!-- Team Section -->
-    <section id="team" class="team section">
+  </section
+  > -->
+  <!-- /Testimonials Section -->
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Team</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Contact</h2>
+      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+    </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row g-4">
-
-          <div class="col-lg-6">
-            <div class="team-intro" data-aos="fade-right" data-aos-delay="150">
-              <div class="intro-content">
-                <h3>Meet Our Exceptional Team</h3>
-                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
-                <div class="stats-row">
-                  <div class="stat-item">
-                    <span class="stat-number">50+</span>
-                    <span class="stat-label">Team Members</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">8</span>
-                    <span class="stat-label">Departments</span>
-                  </div>
-                  <div class="stat-item">
-                    <span class="stat-number">15+</span>
-                    <span class="stat-label">Countries</span>
-                  </div>
-                </div>
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center">
+        <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
+          <div class="contact-form-card">
+            <div class="form-header">
+              <div class="header-icon">
+                <i class="bi bi-chat-dots-fill"></i>
               </div>
+              <h3>Let's Start a Conversation</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                excepteur sint.</p>
             </div>
-          </div>
 
-          <div class="col-lg-6">
-            <div class="team-grid" data-aos="fade-left" data-aos-delay="200">
-              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="250">
-                <div class="hexagon-inner">
-                  <img src="images/team_3.png" alt="Team member">
-                  <div class="member-overlay">
-                    <h5>Sarah Chen</h5>
-                    <span>Creative Director</span>
-                    <div class="social-icons">
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                      <a href="#"><i class="bi bi-twitter"></i></a>
-                    </div>
-                  </div>
+            <form action="forms/contact.php" method="post" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 mb-3">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+                <div class="col-md-6 mb-3">
+                  <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
                 </div>
               </div>
 
-              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="300">
-                <div class="hexagon-inner">
-                  <img src="images/team_1.png" alt="Team member">
-                  <div class="member-overlay">
-                    <h5>Marcus Johnson</h5>
-                    <span>Tech Lead</span>
-                    <div class="social-icons">
-                      <a href="#"><i class="bi bi-github"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
+              <div class="mb-3">
+                <input type="text" class="form-control" name="subject" placeholder="What's this about?" required="">
               </div>
 
-              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="350">
-                <div class="hexagon-inner">
-                  <img src="images/team_2.png" alt="Team member">
-                  <div class="member-overlay">
-                    <h5>Emma Rodriguez</h5>
-                    <span>Product Manager</span>
-                    <div class="social-icons">
-                      <a href="#"><i class="bi bi-instagram"></i></a>
-                      <a href="#"><i class="bi bi-dribbble"></i></a>
-                    </div>
-                  </div>
-                </div>
+              <div class="mb-4">
+                <textarea class="form-control" name="message" rows="4" placeholder="Tell us more about your project..."
+                  required=""></textarea>
               </div>
 
-              <div class="member-hexagon" data-aos="zoom-in" data-aos-delay="400">
-                <div class="hexagon-inner">
-                  <img src="images/team_3.png" alt="Team member">
-                  <div class="member-overlay">
-                    <h5>David Kim</h5>
-                    <span>UX Architect</span>
-                    <div class="social-icons">
-                      <a href="#"><i class="bi bi-behance"></i></a>
-                      <a href="#"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                  </div>
-                </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
-            </div>
-          </div>
 
-        </div>
-
-        <div class="row mt-5">
-          <div class="col-12">
-            <div class="team-carousel-wrapper" data-aos="fade-up" data-aos-delay="200">
-              <h4 class="carousel-title">Leadership Team</h4>
-
-              <div class="leadership-slider swiper init-swiper">
-                <script type="application/json" class="swiper-config">
-                  {
-                    "loop": true,
-                    "speed": 600,
-                    "autoplay": {
-                      "delay": 4000
-                    },
-                    "slidesPerView": 1,
-                    "spaceBetween": 0,
-                    "pagination": {
-                      "el": ".swiper-pagination",
-                      "clickable": true
-                    },
-                    "breakpoints": {
-                      "768": {
-                        "slidesPerView": 2
-                      },
-                      "1024": {
-                        "slidesPerView": 3
-                      }
-                    }
-                  }
-                </script>
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="leader-card">
-                      <div class="leader-image">
-                        <img src="images/team_1.png" alt="Leader">
-                      </div>
-                      <div class="leader-info">
-                        <h5>Jennifer Walsh</h5>
-                        <span class="position">Chief Executive Officer</span>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id.</p>
-                        <div class="leader-contact">
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-envelope"></i>
-                          </a>
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-linkedin"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="leader-card">
-                      <div class="leader-image">
-                        <img src="images/team_2.png" alt="Leader">
-                      </div>
-                      <div class="leader-info">
-                        <h5>Robert Martinez</h5>
-                        <span class="position">Chief Technology Officer</span>
-                        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis.</p>
-                        <div class="leader-contact">
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-envelope"></i>
-                          </a>
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-github"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="leader-card">
-                      <div class="leader-image">
-                        <img src="images/team_3.png" alt="Leader">
-                      </div>
-                      <div class="leader-info">
-                        <h5>Lisa Thompson</h5>
-                        <span class="position">Head of Operations</span>
-                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <div class="leader-contact">
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-envelope"></i>
-                          </a>
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-twitter"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="swiper-slide">
-                    <div class="leader-card">
-                      <div class="leader-image">
-                        <img src="images/team_1.png" alt="Leader">
-                      </div>
-                      <div class="leader-info">
-                        <h5>Alex Garcia</h5>
-                        <span class="position">VP of Marketing</span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
-                        <div class="leader-contact">
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-envelope"></i>
-                          </a>
-                          <a href="#" class="contact-btn">
-                            <i class="bi bi-instagram"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="swiper-pagination"></div>
-              </div>
-            </div>
+              <button type="submit" class="submit-btn">
+                <span>Send Message</span>
+                <i class="bi bi-send-fill"></i>
+              </button>
+            </form>
           </div>
         </div>
 
-        <div class="row mt-4">
-          <div class="col-lg-8 offset-lg-2">
-            <div class="join-team-cta" data-aos="fade-up" data-aos-delay="300">
-              <div class="cta-icon">
-                <i class="bi bi-rocket-takeoff"></i>
+        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
+          <div class="contact-info-area">
+            <div class="info-header">
+              <h3>Ready to Transform Your Ideas?</h3>
+              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
+                rem aperiam eaque ipsa quae ab illo inventore.</p>
+            </div>
+
+            <div class="contact-methods">
+              <div class="method-card" data-aos="zoom-in" data-aos-delay="250">
+                <div class="card-icon">
+                  <i class="bi bi-envelope-at"></i>
+                </div>
+                <div class="card-content">
+                  <h5>Email Us</h5>
+                  <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                      data-cfemail="3b535e5757547b4b49545f4e584f5f5e565415585456">[email&#160;protected]</a></p>
+                  <span class="response-time">Response in 2-4 hours</span>
+                </div>
               </div>
-              <div class="cta-content">
-                <h4>Ready to Join Our Mission?</h4>
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.</p>
-                <div class="cta-actions">
-                  <a href="#" class="btn btn-primary">View Open Roles</a>
-                  <a href="#" class="btn btn-outline">Learn Our Culture</a>
+
+              <div class="method-card" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card-icon">
+                  <i class="bi bi-telephone"></i>
+                </div>
+                <div class="card-content">
+                  <h5>Call Us</h5>
+                  <p>+1 (555) 987-6543</p>
+                  <span class="response-time">Available 9AM - 6PM EST</span>
+                </div>
+              </div>
+
+              <div class="method-card" data-aos="zoom-in" data-aos-delay="350">
+                <div class="card-icon">
+                  <i class="bi bi-geo-alt"></i>
+                </div>
+                <div class="card-content">
+                  <h5>Visit Our Office</h5>
+                  <p>4821 Broadway Street, New York, NY 10013</p>
+                  <span class="response-time">Open Monday - Friday</span>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
 
-      </div>
-
-    </section><!-- /Team Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <div class="row align-items-center">
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="200">
-            <div class="contact-form-card">
-              <div class="form-header">
-                <div class="header-icon">
-                  <i class="bi bi-chat-dots-fill"></i>
+            <div class="additional-info" data-aos="fade-up" data-aos-delay="400">
+              <div class="info-stats">
+                <div class="stat-item">
+                  <div class="stat-number">24h</div>
+                  <div class="stat-label">Average Response</div>
                 </div>
-                <h3>Let's Start a Conversation</h3>
-                <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint.</p>
-              </div>
-
-              <form action="forms/contact.php" method="post" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 mb-3">
-                    <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
-                  </div>
-                  <div class="col-md-6 mb-3">
-                    <input type="email" class="form-control" name="email" placeholder="Email Address" required="">
-                  </div>
+                <div class="stat-item">
+                  <div class="stat-number">98%</div>
+                  <div class="stat-label">Client Satisfaction</div>
                 </div>
-
-                <div class="mb-3">
-                  <input type="text" class="form-control" name="subject" placeholder="What's this about?" required="">
-                </div>
-
-                <div class="mb-4">
-                  <textarea class="form-control" name="message" rows="4" placeholder="Tell us more about your project..." required=""></textarea>
-                </div>
-
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-
-                <button type="submit" class="submit-btn">
-                  <span>Send Message</span>
-                  <i class="bi bi-send-fill"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-            <div class="contact-info-area">
-              <div class="info-header">
-                <h3>Ready to Transform Your Ideas?</h3>
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa quae ab illo inventore.</p>
-              </div>
-
-              <div class="contact-methods">
-                <div class="method-card" data-aos="zoom-in" data-aos-delay="250">
-                  <div class="card-icon">
-                    <i class="bi bi-envelope-at"></i>
-                  </div>
-                  <div class="card-content">
-                    <h5>Email Us</h5>
-                    <p><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="3b535e5757547b4b49545f4e584f5f5e565415585456">[email&#160;protected]</a></p>
-                    <span class="response-time">Response in 2-4 hours</span>
-                  </div>
-                </div>
-
-                <div class="method-card" data-aos="zoom-in" data-aos-delay="300">
-                  <div class="card-icon">
-                    <i class="bi bi-telephone"></i>
-                  </div>
-                  <div class="card-content">
-                    <h5>Call Us</h5>
-                    <p>+1 (555) 987-6543</p>
-                    <span class="response-time">Available 9AM - 6PM EST</span>
-                  </div>
-                </div>
-
-                <div class="method-card" data-aos="zoom-in" data-aos-delay="350">
-                  <div class="card-icon">
-                    <i class="bi bi-geo-alt"></i>
-                  </div>
-                  <div class="card-content">
-                    <h5>Visit Our Office</h5>
-                    <p>4821 Broadway Street, New York, NY 10013</p>
-                    <span class="response-time">Open Monday - Friday</span>
-                  </div>
+                <div class="stat-item">
+                  <div class="stat-number">150+</div>
+                  <div class="stat-label">Projects Delivered</div>
                 </div>
               </div>
 
-              <div class="additional-info" data-aos="fade-up" data-aos-delay="400">
-                <div class="info-stats">
-                  <div class="stat-item">
-                    <div class="stat-number">24h</div>
-                    <div class="stat-label">Average Response</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Client Satisfaction</div>
-                  </div>
-                  <div class="stat-item">
-                    <div class="stat-number">150+</div>
-                    <div class="stat-label">Projects Delivered</div>
-                  </div>
-                </div>
-
-                <div class="social-connect">
-                  <h6>Connect With Us</h6>
-                  <div class="social-links">
-                    <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-github"></i></a>
-                    <a href="#" class="social-link"><i class="bi bi-discord"></i></a>
-                  </div>
+              <div class="social-connect">
+                <h6>Connect With Us</h6>
+                <div class="social-links">
+                  <a href="#" class="social-link"><i class="bi bi-linkedin"></i></a>
+                  <a href="#" class="social-link"><i class="bi bi-twitter-x"></i></a>
+                  <a href="#" class="social-link"><i class="bi bi-github"></i></a>
+                  <a href="#" class="social-link"><i class="bi bi-discord"></i></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- /Contact Section -->
+    </div>
+  </section><!-- /Contact Section -->
 
-  </main>
 
   <footer id="footer" class="footer position-relative dark-background">
 
@@ -1264,7 +1281,8 @@
             <p>A108 Adam Street</p>
             <p>New York, NY 535022</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="d0b9beb6bf90b5a8b1bda0bcb5feb3bfbd">[email&#160;protected]</a></span></p>
+            <p><strong>Email:</strong> <span><a href="/cdn-cgi/l/email-protection" class="__cf_email__"
+                  data-cfemail="d0b9beb6bf90b5a8b1bda0bcb5feb3bfbd">[email&#160;protected]</a></span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -1335,7 +1353,8 @@
   </footer>
 
   <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Preloader -->
   <div id="preloader"></div>
@@ -1352,8 +1371,10 @@
   <!-- Main JS File -->
   <script src="js/main.js"></script>
 
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516" integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg==" data-cf-beacon='{"version":"2024.11.0","token":"68c5ca450bae485a842ff76066d69420","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+  <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v8c78df7c7c0f484497ecbca7046644da1771523124516"
+    integrity="sha512-8DS7rgIrAmghBFwoOTujcf6D9rXvH8xm8JQ1Ja01h9QX8EzXldiszufYa4IFfKdLUKTTrnSFXLDkUEOTrZQ8Qg=="
+    data-cf-beacon='{"version":"2024.11.0","token":"68c5ca450bae485a842ff76066d69420","server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
-

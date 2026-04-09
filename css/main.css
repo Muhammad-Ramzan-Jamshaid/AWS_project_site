@@ -14,29 +14,44 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --heading-font: "Quicksand",  sans-serif;
-  --nav-font: "Poppins",  sans-serif;
+  --default-font: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Quicksand", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #0b0b0b; /* Background color for the entire website, including individual sections */
-  --default-color: #d1d1d1; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #ffffff; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ff6600; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #151515; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #0b0b0b;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #d1d1d1;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #ffffff;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ff6600;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #151515;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+  --primary-orange: #ff6600;
+  --secondary-orange: #ff8533;
+  --dark-orange: #cc5200;
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #ffffff;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ff6600; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #0b0b0b; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #1a1a1a; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #ffffff; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ff6600; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: #ffffff;
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ff6600;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #0b0b0b;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #1a1a1a;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #ffffff;
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ff6600;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -481,6 +496,419 @@ h6 {
     display: block;
   }
 }
+
+
+
+/* Hero Section Styling */
+.hero-section {
+  min-height: calc(100vh - 96px);
+  /* Accounting for navbar height */
+  background-image: linear-gradient(rgba(10, 10, 10, 0.7), rgba(0, 0, 0, 0.95)), url('../images/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 1s ease-out;
+}
+
+.highlight-text {
+  position: relative;
+  display: inline-block;
+}
+
+.highlight-text::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background: rgba(255, 102, 0, 0.2);
+  z-index: -1;
+  transform: skewX(-15deg);
+}
+
+
+.btn-primary-custom {
+  background-color: var(--primary-orange);
+  color: var(--primary-black);
+  border: 2px solid var(--primary-orange);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary-custom:hover {
+  background-color: transparent;
+  color: var(--primary-orange);
+  box-shadow: 0 4px 15px rgba(255, 102, 0, 0.3);
+}
+
+.btn-outline-custom {
+  background-color: transparent;
+  color: var(--text-white);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-custom:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: var(--text-white);
+  color: var(--text-white);
+}
+
+.video-play-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-orange);
+  color: var(--primary-black);
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(255, 102, 0, 0.4), 0 0 0 5px rgba(255, 102, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+}
+
+.video-play-btn::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--primary-orange);
+  opacity: 0.3;
+  z-index: -1;
+  animation: pulsePlayBtn 2s infinite;
+}
+
+.video-play-btn:hover {
+  background-color: var(--secondary-orange);
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 102, 0, 0.6), 0 0 0 8px rgba(255, 102, 0, 0.2);
+  color: var(--primary-black);
+}
+
+.video-play-btn i {
+  margin-left: 5px;
+  /* Slight offset to visually center the play triangle */
+}
+
+@keyframes pulsePlayBtn {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* What We Do Section */
+.what-we-do-section {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+/* Service Cards */
+.service-card {
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  position: relative;
+  overflow: hidden;
+  min-height: 300px;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1);
+}
+
+/* Service Card Color Variations */
+.card-orange {
+  border-bottom: 3px solid #ff9800;
+}
+
+.card-orange:hover {
+  background-color: rgba(255, 152, 0, 0.05);
+  border-color: rgba(255, 152, 0, 0.3);
+  box-shadow: 0 10px 30px rgba(255, 152, 0, 0.1);
+}
+
+.icon-orange {
+  background-color: rgba(255, 152, 0, 0.2);
+  color: #ff9800;
+}
+
+.card-blue {
+  border-bottom: 3px solid #4facfe;
+}
+
+.card-blue:hover {
+  background-color: rgba(79, 172, 254, 0.05);
+  border-color: rgba(79, 172, 254, 0.3);
+  box-shadow: 0 10px 30px rgba(79, 172, 254, 0.1);
+}
+
+.icon-blue {
+  background-color: rgba(79, 172, 254, 0.2);
+  color: #4facfe;
+}
+
+.card-green {
+  border-bottom: 3px solid #4caf50;
+}
+
+.card-green:hover {
+  background-color: rgba(76, 175, 80, 0.05);
+  border-color: rgba(76, 175, 80, 0.3);
+  box-shadow: 0 10px 30px rgba(76, 175, 80, 0.1);
+}
+
+.icon-green {
+  background-color: rgba(76, 175, 80, 0.2);
+  color: #4caf50;
+}
+
+.card-purple {
+  border-bottom: 3px solid #a855f7;
+}
+
+.card-purple:hover {
+  background-color: rgba(168, 85, 247, 0.05);
+  border-color: rgba(168, 85, 247, 0.3);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);
+}
+
+.icon-purple {
+  background-color: rgba(168, 85, 247, 0.2);
+  color: #a855f7;
+}
+
+
+/* Captain Section */
+.captain-section {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+.captain-card {
+  background-color: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 102, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease;
+}
+
+.captain-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at top right, rgba(255, 102, 0, 0.1), transparent 50%);
+  pointer-events: none;
+}
+
+.captain-card:hover {
+  border-color: rgba(255, 102, 0, 0.4);
+  box-shadow: 0 15px 50px rgba(255, 102, 0, 0.15);
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.captain-card:hover .team-img-wrapper {
+  transform: scale(1.05);
+}
+
+
+
+/* Team Section */
+.team-section {
+  background-color: var(--secondary-black);
+  position: relative;
+  border-top: 1px solid rgba(255, 102, 0, 0.1);
+}
+
+.team-slider-container {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  /* Hide scrollbar since we are using buttons */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/* Chrome, Safari, Edge scrollbar hide */
+.team-slider-container::-webkit-scrollbar {
+  display: none;
+}
+
+/* Slider Navigation Buttons */
+.btn-slider-nav {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--secondary-black);
+  color: var(--primary-orange);
+  border: 1px solid rgba(255, 102, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  padding: 0;
+  font-size: 1.5rem;
+}
+
+.btn-slider-nav:hover {
+  background-color: var(--primary-orange);
+  color: var(--primary-black);
+  border-color: var(--primary-orange);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.btn-prev {
+  left: -20px;
+}
+
+.btn-next {
+  right: -20px;
+}
+
+.team-slider-item {
+  flex: 0 0 calc(33.333% - 1rem);
+  scroll-snap-align: start;
+  min-width: 320px;
+}
+
+@media (max-width: 991px) {
+  .team-slider-item {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-slider-item {
+    flex: 0 0 85%;
+  }
+}
+
+.team-card {
+  background-color: var(--primary-black);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.team-card:hover {
+  transform: translateY(-15px);
+  border-color: rgba(255, 102, 0, 0.3);
+  box-shadow: 0 15px 35px rgba(255, 102, 0, 0.15);
+}
+
+.team-img-wrapper {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  padding: 5px;
+  background: linear-gradient(135deg, var(--primary-orange), var(--secondary-orange));
+  transition: all 0.4s ease;
+}
+
+.team-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 4px solid var(--primary-black);
+}
+
+.team-card:hover .team-img-wrapper {
+  transform: scale(1.08);
+  /* slight scale to pop out */
+}
+
+.social-overlay {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  background: rgba(255, 102, 0, 0.85);
+  opacity: 0;
+  transition: all 0.3s ease;
+  transform: scale(0.8);
+}
+
+.team-img-wrapper:hover .social-overlay {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.social-overlay a {
+  font-size: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.social-overlay a:hover {
+  color: var(--primary-black) !important;
+  transform: translateY(-3px);
+}
+
+
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -4209,29 +4637,194 @@ section,
 /*--------------------------------------------------------------
 # Portfolio CSS Fixes and Theme Colors Adjustments
 --------------------------------------------------------------*/
-.portfolio-filters, .isotope-filters { padding: 0; margin: 0 auto 20px auto; list-style: none; text-align: center; }
-.portfolio-filters li, .isotope-filters li { cursor: pointer; display: inline-block; padding: 8px 20px 10px 20px; margin: 0; font-size: 15px; font-weight: 500; line-height: 1; margin-bottom: 5px; border-radius: 50px; transition: all 0.3s ease-in-out; background: var(--surface-color); color: var(--default-color); }
-.portfolio-filters li:hover, .portfolio-filters li.filter-active, .isotope-filters li:hover, .isotope-filters li.filter-active { color: var(--contrast-color); background: var(--accent-color); }
-.portfolio-item, .isotope-item { position: relative; overflow: hidden; }
-.portfolio-wrapper { position: relative; overflow: hidden; border-radius: 8px; background: var(--surface-color); }
-.portfolio-image { position: relative; overflow: hidden; }
-.portfolio-image img { transition: 0.3s; width: 100%; height: auto; display: block; }
-.portfolio-wrapper:hover .portfolio-image img { transform: scale(1.1); }
-.portfolio-hover { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.6); opacity: 0; transition: 0.3s; display: flex; align-items: center; justify-content: center; }
-.portfolio-wrapper:hover .portfolio-hover { opacity: 1; }
-.portfolio-actions { display: flex; }
-.portfolio-actions .action-btn { display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; background: var(--accent-color); color: var(--contrast-color); border-radius: 50%; margin: 0 5px; transition: 0.3s; }
-.portfolio-actions .action-btn:hover { background: var(--contrast-color); color: var(--accent-color); }
-.portfolio-content { padding: 20px; }
-.portfolio-meta { display: flex; justify-content: space-between; margin-bottom: 10px; font-size: 14px; }
-.project-type { color: var(--accent-color); font-weight: 500; }
-.project-rating { color: #ffc107; display: flex; align-items: center; gap: 4px; }
-.portfolio-content h3 { font-size: 20px; margin-bottom: 10px; color: var(--heading-color); }
-.portfolio-content p { color: var(--default-color); font-size: 14px; margin-bottom: 0; }
-.portfolio-tech { margin-top: 15px; display: flex; flex-wrap: wrap; gap: 5px; }
-.tech-badge { display: inline-block; padding: 4px 10px; font-size: 13px; background: rgba(255, 255, 255, 0.1); border-radius: 4px; color: var(--default-color); }
+.portfolio-filters,
+.isotope-filters {
+  padding: 0;
+  margin: 0 auto 20px auto;
+  list-style: none;
+  text-align: center;
+}
+
+.portfolio-filters li,
+.isotope-filters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 8px 20px 10px 20px;
+  margin: 0;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 5px;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+  background: var(--surface-color);
+  color: var(--default-color);
+}
+
+.portfolio-filters li:hover,
+.portfolio-filters li.filter-active,
+.isotope-filters li:hover,
+.isotope-filters li.filter-active {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+}
+
+.portfolio-item,
+.isotope-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: var(--surface-color);
+}
+
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-image img {
+  transition: 0.3s;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.portfolio-wrapper:hover .portfolio-image img {
+  transform: scale(1.1);
+}
+
+.portfolio-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.portfolio-wrapper:hover .portfolio-hover {
+  opacity: 1;
+}
+
+.portfolio-actions {
+  display: flex;
+}
+
+.portfolio-actions .action-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--accent-color);
+  color: var(--contrast-color);
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: 0.3s;
+}
+
+.portfolio-actions .action-btn:hover {
+  background: var(--contrast-color);
+  color: var(--accent-color);
+}
+
+.portfolio-content {
+  padding: 20px;
+}
+
+.portfolio-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.project-type {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+.project-rating {
+  color: #ffc107;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.portfolio-content h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--heading-color);
+}
+
+.portfolio-content p {
+  color: var(--default-color);
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.portfolio-tech {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.tech-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  color: var(--default-color);
+}
 
 /* Theme layout standard overrides */
-.card, .services .service-item, .features .feature-item { background-color: var(--surface-color) !important; border-color: #333 !important; color: var(--default-color); }
-.header { background-color: var(--background-color); }
-.footer { background-color: var(--surface-color); }
+.card,
+.services .service-item,
+.features .feature-item {
+  background-color: var(--surface-color) !important;
+  border-color: #333 !important;
+  color: var(--default-color);
+}
+
+.header {
+  background-color: var(--background-color);
+}
+
+.footer {
+  background-color: var(--surface-color);
+}
+
+/* Custom Hover Effect for How We Work */
+.work-step-card {
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.work-step-content {
+  transition: all 0.3s ease-in-out;
+}
+.work-step-card:hover .work-step-content {
+  background-color: var(--primary-black) !important;
+  border-color: var(--secondary-orange) !important;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 102, 0, 0.15);
+}
+.work-step-icon {
+  transition: all 0.4s ease-in-out;
+}
+.work-step-card:hover .work-step-icon {
+  background-color: var(--primary-orange) !important;
+  color: var(--primary-black) !important;
+  transform: rotate(360deg) scale(1.1);
+}
