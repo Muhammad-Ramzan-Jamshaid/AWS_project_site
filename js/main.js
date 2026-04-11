@@ -187,3 +187,4 @@ if (teamSlider) {
     autoScrollInterval = setInterval(moveNext, 2000);
   });
 }
+
